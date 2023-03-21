@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-picigame-dev-104706-authRole",
+      "UnauthRoleArn": "arn:aws:iam::541702493360:role/amplify-picigame-dev-104706-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::541702493360:role/amplify-picigame-dev-104706-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-picigame-dev-104706-deployment",
+      "UnauthRoleName": "amplify-picigame-dev-104706-unauthRole",
+      "StackName": "amplify-picigame-dev-104706",
+      "StackId": "arn:aws:cloudformation:us-east-2:541702493360:stack/amplify-picigame-dev-104706/ba761b10-bc3e-11ed-9ea3-0639ce6366a8",
+      "AmplifyAppId": "d1lyzmjdmtfc68"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1lyzmjdmtfc68",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
