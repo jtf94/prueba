@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Blockly-gamepad </title>
+    <style>
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #c72222;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #666;
+    }
+    
+    .button:hover {background-color: #a82927}
+    
+    .button:active {
+      background-color: #ec1818;
+      box-shadow: 0 5px #27412c;
+      transform: translateY(4px);
+    }
+
+    .button_2 {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #ec1010;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #666;
+    }
+    
+    .button_2:hover {background-color: #c71a17}
+    
+    .button_2:active {
+      background-color: #ec1818;
+      box-shadow: 0 5px #27412c;
+      transform: translateY(4px);
+    }
+
+    .button_3 {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #fdd700;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #666;
+    }
+    
+    .button_3:hover {background-color: #d6cb38}
+    
+    .button_3:active {
+      background-color: #ffe600;
+      box-shadow: 0 5px #27412c;
+      transform: translateY(4px);
+    }
+
+    .button_4 {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #308f04;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #666;
+    }
+    
+    .button_4:hover {background-color: #034107}
+    
+    .button_4:active {
+      background-color: #04910b;
+      box-shadow: 0 5px #27412c;
+      transform: translateY(4px);
+    }
+
+    .button_5 {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #28c708;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 9px #666;
+    }
+    
+    .button_5:hover {background-color: #066b0e}
+    
+    .button_5:active {
+      background-color: #3ee407;
+      box-shadow: 0 5px #27412c;
+      transform: translateY(4px);
+    }
+
+  </style>
+</head>
+
+<body>
+    
+<div id="pregunta 1">
+     <h1>Te gusto el nivel 1:</h1> 
+
+<button class="button" id="nada_1"  onmouseenter="entrada_nada1()" onmouseleave="salida_nada1()">Nada</button>
+<button class="button_2" id="poco_1" onmouseenter="entrada_poco1()" onmouseleave="salida_poco1()">Poco</button>
+<button class="button_3" id="regular_1" onmouseenter="entrada_regular1()" onmouseleave="salida_regular1()">Regular</button>
+<button class="button_4" id="bastante_1" onmouseenter="entrada_bastante1()" onmouseleave="salida_bastante1()">Bastante</button>
+<button class="button_5" id="mucho_1" onmouseenter="entrada_mucho1()" onmouseleave="salida_mucho1()">Mucho</button>
+
+<script>
+//---------------------------Eventos del boton te gusto NADA_1----------------------------------------------
+        document.getElementById("nada_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("nada_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var nada1 = 'Click en boton nada_1';
+            console.log(nada1);
+        }
+        
+        function mouseUpForward(){
+            var nada1 = 'Suelta el  boton nada_1'
+            console.log(nada1);
+        }
+        
+        function entrada_nada1(){
+            var entrada_nada1 = 'entrada boton nada_1';
+            console.log(entrada_nada1)
+        }
+        
+        function salida_nada1(){
+            var salida_nada1 = 'salida boton nada_1';
+            console.log(salida_nada1)
+        }
+
+//---------------------------Eventos del boton te gusto POCO_1----------------------------------------------
+        document.getElementById("poco_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("poco_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var poco1 = 'Click en boton poco_1';
+            console.log(poco1);
+        }
+        
+        function mouseUpForward(){
+            var poco1 = 'Suelta el  boton poco_1'
+            console.log(poco1);
+        }
+        
+        function entrada_poco1(){
+            var entrada_poco1 = 'entrada boton poco_1';
+            console.log(entrada_poco1)
+        }
+        
+        function salida_poco1(){
+            var salida_poco1 = 'salida boton poco_1';
+            console.log(salida_poco1)
+        }
+
+  //---------------------------Eventos del boton te gusto REGULAR_1----------------------------------------------
+        document.getElementById("regular_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("regular_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var regular1 = 'Click en boton regular_1';
+            console.log(regular1);
+        }
+        
+        function mouseUpForward(){
+            var regular1 = 'Suelta el  boton regular_1'
+            console.log(regular1);
+        }
+        
+        function entrada_regular1(){
+            var entrada_regular1 = 'entrada boton regular_1';
+            console.log(entrada_regular1)
+        }
+        
+        function salida_regular1(){
+            var salida_regular1 = 'salida boton regular_1';
+            console.log(salida_regular1)
+        }
+
+  //---------------------------Eventos del boton te gusto BASTANTE_1----------------------------------------------
+        document.getElementById("bastante_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("bastante_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var bastante1 = 'Click en boton bastante_1';
+            console.log(bastante1);
+        }
+        
+        function mouseUpForward(){
+            var bastante1 = 'Suelta el  boton bastante_1'
+            console.log(bastante1);
+        }
+        
+        function entrada_bastante1(){
+            var entrada_bastante1 = 'entrada boton bastante_1';
+            console.log(entrada_bastante1)
+        }
+        
+        function salida_bastante1(){
+            var salida_bastante1 = 'salida boton bastante_1';
+            console.log(salida_bastante1)
+        }
+
+  //---------------------------Eventos del boton te gusto MUCHO_1----------------------------------------------
+        document.getElementById("mucho_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("mucho_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var mucho1 = 'Click en boton mucho_1';
+            console.log(mucho1);
+        }
+        
+        function mouseUpForward(){
+            var mucho1 = 'Suelta el  boton mucho_1'
+            console.log(mucho1);
+        }
+        
+        function entrada_mucho1(){
+            var entrada_mucho1 = 'entrada boton mucho_1';
+            console.log(entrada_mucho1)
+        }
+        
+        function salida_mucho1(){
+            var salida_mucho1 = 'salida boton mucho_1';
+            console.log(salida_mucho1)
+        }
+</script>
+
+  <h3>Que tan dificil te parecio el nivel 1:</h3> 
+  <button class="button_5" onclick="window.close(), alert('Ve al nivel 4')" id="Dnada_1" 
+  onmouseenter="entrada_Dnada1()" onmouseleave="salida_Dnada1()">Nada</button>
+
+  <button class="button_4" onclick="window.close(), alert('Ve al nivel 4')" id="Dpoco_1"
+  onmouseenter="entrada_Dpoco1()" onmouseleave="salida_Dpoco1()">Poco</button>
+
+  <button class="button_3" onclick="window.close(), alert('Ve al nivel 2')" id="Dregular_1"
+  onmouseenter="entrada_Dregular1()" onmouseleave="salida_Dregular1()">Regular</button>
+
+  <button class="button_2" onclick="window.close(), alert('Ve al nivel 2')" id="Dbastante_1"
+  onmouseenter="entrada_Dbastante1()" onmouseleave="salida_Dbastante1()">Bastante</button>
+
+  <button class="button" onclick="window.close(), alert('Ve al nivel 2')" id="Dmucho_1"
+  onmouseenter="entrada_Dmucho1()" onmouseleave="salida_Dmucho1()">Mucho</button>
+    </div>
+    
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_1----------------------------------------------
+      document.getElementById("Dnada_1").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada1 = 'Click en boton Dificultad_nada_1';
+            console.log(Dnada1);
+        }
+        
+        function mouseUpForward(){
+            var Dnada1 = 'Suelta el  boton Dificultad_nada_1'
+            console.log(Dnada1);
+        }
+        
+        function entrada_Dnada1(){
+            var entrada_Dnada1 = 'entrada boton Dificultad_nada_1';
+            console.log(entrada_Dnada1)
+        }
+        
+        function salida_Dnada1(){
+            var salida_Dnada1 = 'salida boton Dificultad_nada_1';
+            console.log(salida_Dnada1)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_1----------------------------------------------
+        document.getElementById("Dpoco_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco1 = 'Click en boton Dificultad_poco_1';
+            console.log(Dpoco1);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco1 = 'Suelta el  boton Dificultad_poco_1';
+            console.log(Dpoco1);
+        }
+        
+        function entrada_Dpoco1(){
+            var entrada_Dpoco1 = 'entrada boton Dificultad_poco_1';
+            console.log(entrada_Dpoco1)
+        }
+        
+        function salida_Dpoco1(){
+            var salida_Dpoco1 = 'salida boton Dificultad_poco_1';
+            console.log(salida_Dpoco1)
+        }
+
+  //---------------------------Eventos del boton te gusto REGULAR_1----------------------------------------------
+        document.getElementById("Dregular_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular1 = 'Click en boton Dificultad_regular_1';
+            console.log(Dregular1);
+        }
+        
+        function mouseUpForward(){
+            var Dregular1 = 'Suelta el  boton Dificultad_regular_1'
+            console.log(Dregular1);
+        }
+        
+        function entrada_Dregular1(){
+            var entrada_Dregular1 = 'entrada boton Dificultad_regular_1';
+            console.log(entrada_Dregular1)
+        }
+        
+        function salida_Dregular1(){
+            var salida_Dregular1 = 'salida boton Dificultad_regular_1';
+            console.log(salida_Dregular1)
+        }
+
+  //---------------------------Eventos del boton te gusto BASTANTE_1----------------------------------------------
+        document.getElementById("Dbastante_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante1 = 'Click en boton Dificultad_bastante_1';
+            console.log(Dbastante1);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante1 = 'Suelta el  boton Dificultad_bastante_1'
+            console.log(Dbastante1);
+        }
+        
+        function entrada_Dbastante1(){
+            var entrada_Dbastante1 = 'entrada boton Dificultad_bastante_1';
+            console.log(entrada_Dbastante1)
+        }
+        
+        function salida_Dbastante1(){
+            var salida_Dbastante1 = 'salida boton Dificultad_bastante_1';
+            console.log(salida_Dbastante1)
+        }
+
+  //---------------------------Eventos del boton te gusto MUCHO_1----------------------------------------------
+        document.getElementById("Dmucho_1").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_1").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho1 = 'Click en boton Dificultad_mucho_1';
+            console.log(Dmucho1);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho1 = 'Suelta el  boton Dificultad_mucho_1'
+            console.log(Dmucho1);
+        }
+        
+        function entrada_Dmucho1(){
+            var entrada_Dmucho1 = 'entrada boton Dificultad_mucho_1';
+            console.log(entrada_Dmucho1)
+        }
+        
+        function salida_Dmucho1(){
+            var salida_Dmucho1 = 'salida boton Dificultad_mucho_1';
+            console.log(salida_Dmucho1)
+        }
+    </script>
+
+
+<div id="pregunta 2">
+     <h3>Te gusto el nivel 2:</h3> 
+     <button class="button" id="nada_2"  onmouseenter="entrada_nada2()" onmouseleave="salida_nada2()">Nada</button>
+     <button class="button_2" id="poco_2" onmouseenter="entrada_poco2()" onmouseleave="salida_poco2()">Poco</button>
+     <button class="button_3" id="regular_2" onmouseenter="entrada_regular2()" onmouseleave="salida_regular2()">Regular</button>
+     <button class="button_4" id="bastante_2" onmouseenter="entrada_bastante2()" onmouseleave="salida_bastante2()">Bastante</button>
+     <button class="button_5" id="mucho_2" onmouseenter="entrada_mucho2()" onmouseleave="salida_mucho2()">Mucho</button>
+
+     <script>
+      //---------------------------Eventos del boton te gusto NADA_2----------------------------------------------
+              document.getElementById("nada_2").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("nada_2").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var nada2 = 'Click en boton nada_2';
+                  console.log(nada2);
+              }
+              
+              function mouseUpForward(){
+                  var nada2 = 'Suelta el  boton nada_2'
+                  console.log(nada2);
+              }
+              
+              function entrada_nada2(){
+                  var entrada_nada2 = 'entrada boton nada_2';
+                  console.log(entrada_nada2)
+              }
+              
+              function salida_nada2(){
+                  var salida_nada2 = 'salida boton nada_2';
+                  console.log(salida_nada2)
+              }
+      
+      //---------------------------Eventos del boton te gusto POCO_2----------------------------------------------
+              document.getElementById("poco_2").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("poco_2").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var poco2 = 'Click en boton poco_2';
+                  console.log(poco2);
+              }
+              
+              function mouseUpForward(){
+                  var poco2 = 'Suelta el  boton poco_2'
+                  console.log(poco2);
+              }
+              
+              function entrada_poco2(){
+                  var entrada_poco2 = 'entrada boton poco_2';
+                  console.log(entrada_poco2)
+              }
+              
+              function salida_poco2(){
+                  var salida_poco2 = 'salida boton poco_2';
+                  console.log(salida_poco2)
+              }
+      
+        //---------------------------Eventos del boton te gusto REGULAR_2----------------------------------------------
+              document.getElementById("regular_2").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("regular_2").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var regular2 = 'Click en boton regular_2';
+                  console.log(regular2);
+              }
+              
+              function mouseUpForward(){
+                  var regular2 = 'Suelta el  boton regular_2'
+                  console.log(regular2);
+              }
+              
+              function entrada_regular2(){
+                  var entrada_regular2 = 'entrada boton regular_2';
+                  console.log(entrada_regular2)
+              }
+              
+              function salida_regular2(){
+                  var salida_regular2 = 'salida boton regular_2';
+                  console.log(salida_regular2)
+              }
+      
+        //---------------------------Eventos del boton te gusto BASTANTE_2----------------------------------------------
+              document.getElementById("bastante_2").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("bastante_2").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var bastante2 = 'Click en boton bastante_2';
+                  console.log(bastante2);
+              }
+              
+              function mouseUpForward(){
+                  var bastante2 = 'Suelta el  boton bastante_2'
+                  console.log(bastante2);
+              }
+              
+              function entrada_bastante2(){
+                  var entrada_bastante2 = 'entrada boton bastante_2';
+                  console.log(entrada_bastante2)
+              }
+              
+              function salida_bastante2(){
+                  var salida_bastante2 = 'salida boton bastante_2';
+                  console.log(salida_bastante2)
+              }
+      
+        //---------------------------Eventos del boton te gusto MUCHO_2----------------------------------------------
+              document.getElementById("mucho_2").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("mucho_2").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var mucho2 = 'Click en boton mucho_2';
+                  console.log(mucho2);
+              }
+              
+              function mouseUpForward(){
+                  var mucho2 = 'Suelta el  boton mucho_2'
+                  console.log(mucho2);
+              }
+              
+              function entrada_mucho2(){
+                  var entrada_mucho2 = 'entrada boton mucho_2';
+                  console.log(entrada_mucho2)
+              }
+              
+              function salida_mucho2(){
+                  var salida_mucho2 = 'salida boton mucho_2';
+                  console.log(salida_mucho2)
+              }
+      </script>
+    
+  <h3>Que tan dificil te parecio el nivel 2:</h3> 
+
+  <button class="button_5" onclick="window.close(), alert('Ve al nivel 4')" id="Dnada_2" 
+  onmouseenter="entrada_Dnada2()" onmouseleave="salida_Dnada2()">Nada</button>
+
+  <button class="button_4" onclick="window.close(), alert('Ve al nivel 4')" id="Dpoco_2" 
+  onmouseenter="entrada_Dpoco2()" onmouseleave="salida_Dpoco2()">Poco</button>
+
+  <button class="button_3" onclick="window.close(), alert('Ve al nivel 3')" id="Dregular_2"
+  id="Dnada_2" onmouseenter="entrada_Dregular2()" onmouseleave="salida_Dregular2()">Regular</button>
+
+  <button class="button_2" onclick="window.close(), alert('Ve al nivel 3')" id="Dbastante_2" 
+  onmouseenter="entrada_Dbastante2()" onmouseleave="salida_Dbastante2()">Bastante</button>
+
+  <button class="button" onclick="window.close(), alert('Ve al nivel 3')" id="Dmucho_2" 
+  onmouseenter="entrada_Dmucho2()" onmouseleave="salida_Dmucho2()">Mucho</button>
+    <br>
+
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_2----------------------------------------------
+      document.getElementById("Dnada_2").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_2").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada2 = 'Click en boton Dificultad_nada_2';
+            console.log(Dnada2);
+        }
+        
+        function mouseUpForward(){
+            var Dnada2 = 'Suelta el  boton Dificultad_nada_2'
+            console.log(Dnada2);
+        }
+        
+        function entrada_Dnada2(){
+            var entrada_Dnada2 = 'entrada boton Dificultad_nada_2';
+            console.log(entrada_Dnada2)
+        }
+        
+        function salida_Dnada2(){
+            var salida_Dnada2 = 'salida boton Dificultad_nada_2';
+            console.log(salida_Dnada2)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_1----------------------------------------------
+        document.getElementById("Dpoco_2").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_2").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco2 = 'Click en boton Dificultad_poco_2';
+            console.log(Dpoco2);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco2 = 'Suelta el  boton Dificultad_poco_2';
+            console.log(Dpoco2);
+        }
+        
+        function entrada_Dpoco2(){
+            var entrada_Dpoco2 = 'entrada boton Dificultad_poco_2';
+            console.log(entrada_Dpoco2)
+        }
+        
+        function salida_Dpoco2(){
+            var salida_Dpoco2 = 'salida boton Dificultad_poco_2';
+            console.log(salida_Dpoco2)
+        }
+
+  //---------------------------Eventos del boton te gusto REGULAR_1----------------------------------------------
+        document.getElementById("Dregular_2").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_2").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular2 = 'Click en boton Dificultad_regular_2';
+            console.log(Dregular2);
+        }
+        
+        function mouseUpForward(){
+            var Dregular2 = 'Suelta el  boton Dificultad_regular_2'
+            console.log(Dregular2);
+        }
+        
+        function entrada_Dregular2(){
+            var entrada_Dregular2 = 'entrada boton Dificultad_regular_2';
+            console.log(entrada_Dregular2)
+        }
+        
+        function salida_Dregular2(){
+            var salida_Dregular2 = 'salida boton Dificultad_regular_2';
+            console.log(salida_Dregular2)
+        }
+
+  //---------------------------Eventos del boton te gusto BASTANTE_1----------------------------------------------
+        document.getElementById("Dbastante_2").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_2").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante2 = 'Click en boton Dificultad_bastante_2';
+            console.log(Dbastante2);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante2 = 'Suelta el  boton Dificultad_bastante_2'
+            console.log(Dbastante2);
+        }
+        
+        function entrada_Dbastante2(){
+            var entrada_Dbastante2 = 'entrada boton Dificultad_bastante_2';
+            console.log(entrada_Dbastante2)
+        }
+        
+        function salida_Dbastante2(){
+            var salida_Dbastante2 = 'salida boton Dificultad_bastante_2';
+            console.log(salida_Dbastante2)
+        }
+
+  //---------------------------Eventos del boton te gusto MUCHO_1----------------------------------------------
+        document.getElementById("Dmucho_2").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_2").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho2 = 'Click en boton Dificultad_mucho_2';
+            console.log(Dmucho2);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho2 = 'Suelta el  boton Dificultad_mucho_2'
+            console.log(Dmucho2);
+        }
+        
+        function entrada_Dmucho2(){
+            var entrada_Dmucho2 = 'entrada boton Dificultad_mucho_2';
+            console.log(entrada_Dmucho2)
+        }
+        
+        function salida_Dmucho2(){
+            var salida_Dmucho2 = 'salida boton Dificultad_mucho_2';
+            console.log(salida_Dmucho2)
+        }
+    </script>
+
+    </div>
+
+<div id="pregunta 3">
+     <h3>Te gusto el nivel 3:</h3>
+
+     <button class="button" id="nada_3"  onmouseenter="entrada_nada3()" onmouseleave="salida_nada3()">Nada</button>
+     <button class="button_2" id="poco_3" onmouseenter="entrada_poco3()" onmouseleave="salida_poco3()">Poco</button>
+     <button class="button_3" id="regular_3" onmouseenter="entrada_regular3()" onmouseleave="salida_regular3()">Regular</button>
+     <button class="button_4" id="bastante_3" onmouseenter="entrada_bastante3()" onmouseleave="salida_bastante3()">Bastante</button>
+     <button class="button_5" id="mucho_3" onmouseenter="entrada_mucho3()" onmouseleave="salida_mucho3()">Mucho</button>
+
+     <script>
+      //---------------------------Eventos del boton te gusto NADA_3----------------------------------------------
+              document.getElementById("nada_3").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("nada_3").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var nada3 = 'Click en boton nada_3';
+                  console.log(nada3);
+              }
+              
+              function mouseUpForward(){
+                  var nada3 = 'Suelta el  boton nada_3'
+                  console.log(nada3);
+              }
+              
+              function entrada_nada3(){
+                  var entrada_nada3 = 'entrada boton nada_3';
+                  console.log(entrada_nada3)
+              }
+              
+              function salida_nada3(){
+                  var salida_nada3 = 'salida boton nada_3';
+                  console.log(salida_nada3)
+              }
+      
+      //---------------------------Eventos del boton te gusto POCO_3----------------------------------------------
+              document.getElementById("poco_3").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("poco_3").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var poco3 = 'Click en boton poco_3';
+                  console.log(poco3);
+              }
+              
+              function mouseUpForward(){
+                  var poco3 = 'Suelta el  boton poco_3'
+                  console.log(poco3);
+              }
+              
+              function entrada_poco3(){
+                  var entrada_poco3 = 'entrada boton poco_3';
+                  console.log(entrada_poco3)
+              }
+              
+              function salida_poco3(){
+                  var salida_poco3 = 'salida boton poco_3';
+                  console.log(salida_poco3)
+              }
+      
+        //---------------------------Eventos del boton te gusto REGULAR_3----------------------------------------------
+              document.getElementById("regular_3").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("regular_3").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var regular3 = 'Click en boton regular_3';
+                  console.log(regular3);
+              }
+              
+              function mouseUpForward(){
+                  var regular3 = 'Suelta el  boton regular_3'
+                  console.log(regular3);
+              }
+              
+              function entrada_regular3(){
+                  var entrada_regular3 = 'entrada boton regular_3';
+                  console.log(entrada_regular3)
+              }
+              
+              function salida_regular3(){
+                  var salida_regular3 = 'salida boton regular_3';
+                  console.log(salida_regular3)
+              }
+      
+        //---------------------------Eventos del boton te gusto BASTANTE_3----------------------------------------------
+              document.getElementById("bastante_3").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("bastante_3").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var bastante3 = 'Click en boton bastante_3';
+                  console.log(bastante3);
+              }
+              
+              function mouseUpForward(){
+                  var bastante3 = 'Suelta el  boton bastante_3'
+                  console.log(bastante3);
+              }
+              
+              function entrada_bastante3(){
+                  var entrada_bastante3 = 'entrada boton bastante_3';
+                  console.log(entrada_bastante3)
+              }
+              
+              function salida_bastante3(){
+                  var salida_bastante3 = 'salida boton bastante_3';
+                  console.log(salida_bastante3)
+              }
+      
+        //---------------------------Eventos del boton te gusto MUCHO_2----------------------------------------------
+              document.getElementById("mucho_3").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("mucho_3").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var mucho3 = 'Click en boton mucho_3';
+                  console.log(mucho3);
+              }
+              
+              function mouseUpForward(){
+                  var mucho3 = 'Suelta el  boton mucho_3'
+                  console.log(mucho3);
+              }
+              
+              function entrada_mucho3(){
+                  var entrada_mucho3 = 'entrada boton mucho_3';
+                  console.log(entrada_mucho3)
+              }
+              
+              function salida_mucho3(){
+                  var salida_mucho3 = 'salida boton mucho_3';
+                  console.log(salida_mucho3)
+              }
+      </script>
+
+    
+  <h3>Que tan dificil te parecio el nivel 3:</h3> 
+
+   <button class="button_5" onclick="window.close(), alert('Ve al nivel 4')" id="Dnada_3" 
+   onmouseenter="entrada_Dnada3()" onmouseleave="salida_Dnada3()">Nada</button>
+
+   <button class="button_4" onclick="window.close(), alert('Ve al nivel 4')" id="Dpoco_3" 
+   onmouseenter="entrada_Dpoco3()" onmouseleave="salida_Dpoco3()">Poco</button>
+
+   <button class="button_3" onclick="window.close(), alert('Ve al nivel 4')" id="Dregular_3" 
+   onmouseenter="entrada_Dregular3()" onmouseleave="salida_Dregular3()">Regular</button>
+
+   <button class="button_2" onclick="window.close(), alert('Ve al nivel 4')" id="Dbastante_3" 
+   onmouseenter="entrada_Dbastante3()" onmouseleave="salida_Dbastante3()">Bastante</button>
+
+   <button class="button" onclick="window.close(), alert('Ve al nivel 4')" id="Dmucho_3" 
+   onmouseenter="entrada_Dmucho3()" onmouseleave="salida_Dmucho3()">Mucho</button>
+    <br>
+
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_3----------------------------------------------
+      document.getElementById("Dnada_3").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_3").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada3 = 'Click en boton Dificultad_nada_3';
+            console.log(Dnada3);
+        }
+        
+        function mouseUpForward(){
+            var Dnada3 = 'Suelta el  boton Dificultad_nada_3'
+            console.log(Dnada3);
+        }
+        
+        function entrada_Dnada3(){
+            var entrada_Dnada3 = 'entrada boton Dificultad_nada_3';
+            console.log(entrada_Dnada3)
+        }
+        
+        function salida_Dnada3(){
+            var salida_Dnada3 = 'salida boton Dificultad_nada_3';
+            console.log(salida_Dnada3)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_3----------------------------------------------
+        document.getElementById("Dpoco_3").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_3").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco3 = 'Click en boton Dificultad_poco_3';
+            console.log(Dpoco3);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco3 = 'Suelta el  boton Dificultad_poco_3';
+            console.log(Dpoco3);
+        }
+        
+        function entrada_Dpoco3(){
+            var entrada_Dpoco3 = 'entrada boton Dificultad_poco_3';
+            console.log(entrada_Dpoco3)
+        }
+        
+        function salida_Dpoco3(){
+            var salida_Dpoco3 = 'salida boton Dificultad_poco_3';
+            console.log(salida_Dpoco3)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD REGULAR_3----------------------------------------------
+        document.getElementById("Dregular_3").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_3").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular3 = 'Click en boton Dificultad_regular_3';
+            console.log(Dregular3);
+        }
+        
+        function mouseUpForward(){
+            var Dregular3 = 'Suelta el  boton Dificultad_regular_3'
+            console.log(Dregular3);
+        }
+        
+        function entrada_Dregular3(){
+            var entrada_Dregular3 = 'entrada boton Dificultad_regular_3';
+            console.log(entrada_Dregular3)
+        }
+        
+        function salida_Dregular3(){
+            var salida_Dregular3 = 'salida boton Dificultad_regular_3';
+            console.log(salida_Dregular3)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD BASTANTE_1----------------------------------------------
+        document.getElementById("Dbastante_3").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_3").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante3 = 'Click en boton Dificultad_bastante_3';
+            console.log(Dbastante3);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante3 = 'Suelta el  boton Dificultad_bastante_3'
+            console.log(Dbastante3);
+        }
+        
+        function entrada_Dbastante3(){
+            var entrada_Dbastante3 = 'entrada boton Dificultad_bastante_3';
+            console.log(entrada_Dbastante3)
+        }
+        
+        function salida_Dbastante3(){
+            var salida_Dbastante3 = 'salida boton Dificultad_bastante_3';
+            console.log(salida_Dbastante3)
+        }
+
+  //---------------------------Eventos del boton te gusto MUCHO_1----------------------------------------------
+        document.getElementById("Dmucho_3").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_3").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho3 = 'Click en boton Dificultad_mucho_3';
+            console.log(Dmucho3);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho3 = 'Suelta el  boton Dificultad_mucho_3'
+            console.log(Dmucho3);
+        }
+        
+        function entrada_Dmucho3(){
+            var entrada_Dmucho3 = 'entrada boton Dificultad_mucho_3';
+            console.log(entrada_Dmucho3)
+        }
+        
+        function salida_Dmucho3(){
+            var salida_Dmucho3 = 'salida boton Dificultad_mucho_3';
+            console.log(salida_Dmucho3)
+        }
+    </script>
+
+    </div>
+    
+ <div id="pregunta 4">
+     <h3>Te gusto el nivel 4:</h3> 
+
+     <button class="button" id="nada_4"  onmouseenter="entrada_nada4()" onmouseleave="salida_nada4()">Nada</button>
+     <button class="button_2" id="poco_4" onmouseenter="entrada_poco4()" onmouseleave="salida_poco4()">Poco</button>
+     <button class="button_3" id="regular_4" onmouseenter="entrada_regular4()" onmouseleave="salida_regular4()">Regular</button>
+     <button class="button_4" id="bastante_4" onmouseenter="entrada_bastante4()" onmouseleave="salida_bastante4()">Bastante</button>
+     <button class="button_5" id="mucho_4" onmouseenter="entrada_mucho4()" onmouseleave="salida_mucho4()">Mucho</button>
+
+     <script>
+      //---------------------------Eventos del boton te gusto NADA_4----------------------------------------------
+              document.getElementById("nada_4").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("nada_4").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var nada4 = 'Click en boton nada_4';
+                  console.log(nada4);
+              }
+              
+              function mouseUpForward(){
+                  var nada4 = 'Suelta el  boton nada_4'
+                  console.log(nada4);
+              }
+              
+              function entrada_nada4(){
+                  var entrada_nada4 = 'entrada boton nada_4';
+                  console.log(entrada_nada4)
+              }
+              
+              function salida_nada4(){
+                  var salida_nada4 = 'salida boton nada_4';
+                  console.log(salida_nada4)
+              }
+      
+      //---------------------------Eventos del boton te gusto POCO_4----------------------------------------------
+              document.getElementById("poco_4").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("poco_4").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var poco4 = 'Click en boton poco_4';
+                  console.log(poco4);
+              }
+              
+              function mouseUpForward(){
+                  var poco4 = 'Suelta el  boton poco_4'
+                  console.log(poco4);
+              }
+              
+              function entrada_poco4(){
+                  var entrada_poco4 = 'entrada boton poco_4';
+                  console.log(entrada_poco4)
+              }
+              
+              function salida_poco4(){
+                  var salida_poco4 = 'salida boton poco_4';
+                  console.log(salida_poco4)
+              }
+      
+        //---------------------------Eventos del boton te gusto REGULAR_4----------------------------------------------
+              document.getElementById("regular_4").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("regular_4").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var regular4 = 'Click en boton regular_4';
+                  console.log(regular4);
+              }
+              
+              function mouseUpForward(){
+                  var regular4 = 'Suelta el  boton regular_4'
+                  console.log(regular4);
+              }
+              
+              function entrada_regular4(){
+                  var entrada_regular4 = 'entrada boton regular_4';
+                  console.log(entrada_regular4)
+              }
+              
+              function salida_regular4(){
+                  var salida_regular4 = 'salida boton regular_4';
+                  console.log(salida_regular4)
+              }
+      
+        //---------------------------Eventos del boton te gusto BASTANTE_4----------------------------------------------
+              document.getElementById("bastante_4").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("bastante_4").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var bastante4 = 'Click en boton bastante_4';
+                  console.log(bastante4);
+              }
+              
+              function mouseUpForward(){
+                  var bastante4 = 'Suelta el  boton bastante_4'
+                  console.log(bastante4);
+              }
+              
+              function entrada_bastante4(){
+                  var entrada_bastante4 = 'entrada boton bastante_4';
+                  console.log(entrada_bastante4)
+              }
+              
+              function salida_bastante4(){
+                  var salida_bastante4 = 'salida boton bastante_4';
+                  console.log(salida_bastante4)
+              }
+      
+        //---------------------------Eventos del boton te gusto MUCHO_4----------------------------------------------
+              document.getElementById("mucho_4").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("mucho_4").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var mucho4 = 'Click en boton mucho_4';
+                  console.log(mucho4);
+              }
+              
+              function mouseUpForward(){
+                  var mucho4 = 'Suelta el  boton mucho_4'
+                  console.log(mucho4);
+              }
+              
+              function entrada_mucho4(){
+                  var entrada_mucho4 = 'entrada boton mucho_4';
+                  console.log(entrada_mucho4)
+              }
+              
+              function salida_mucho4(){
+                  var salida_mucho4 = 'salida boton mucho_4';
+                  console.log(salida_mucho4)
+              }
+      </script>
+
+    
+  <h3>Que tan dificil te parecio el nivel 4:</h3> 
+
+  <button class="button_5" onclick="window.close(), alert('Ve al nivel 5')" id="Dnada_4" 
+  onmouseenter="entrada_Dnada4()" onmouseleave="salida_Dnada4()">Nada</button>
+
+  <button class="button_4" onclick="window.close(), alert('Ve al nivel 5')" id="Dpoco_4" 
+  onmouseenter="entrada_Dpoco4()" onmouseleave="salida_Dpoco4()">Poco</button>
+
+  <button class="button_3" onclick="window.close(), alert('Ve al nivel 5')" id="Dregular_4" 
+  onmouseenter="entrada_Dregular4()" onmouseleave="salida_Dregular4()">Regular</button>
+
+  <button class="button_2" onclick="window.close(), alert('Ve al nivel 5')" id="Dbastante_4" 
+  onmouseenter="entrada_Dbastante4()" onmouseleave="salida_Dbastante4()">Bastante</button>
+
+  <button class="button" onclick="window.close(), alert('Ve al nivel 5')" id="Dmucho_4" 
+  onmouseenter="entrada_Dmucho4()" onmouseleave="salida_Dmucho4()">Mucho</button>
+    <br>
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_4----------------------------------------------
+      document.getElementById("Dnada_4").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_4").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada4 = 'Click en boton Dificultad_nada_4';
+            console.log(Dnada4);
+        }
+        
+        function mouseUpForward(){
+            var Dnada4 = 'Suelta el  boton Dificultad_nada_4'
+            console.log(Dnada4);
+        }
+        
+        function entrada_Dnada4(){
+            var entrada_Dnada4 = 'entrada boton Dificultad_nada_4';
+            console.log(entrada_Dnada4)
+        }
+        
+        function salida_Dnada4(){
+            var salida_Dnada4 = 'salida boton Dificultad_nada_4';
+            console.log(salida_Dnada4)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_4----------------------------------------------
+        document.getElementById("Dpoco_4").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_4").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco4 = 'Click en boton Dificultad_poco_4';
+            console.log(Dpoco4);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco4 = 'Suelta el  boton Dificultad_poco_4';
+            console.log(Dpoco4);
+        }
+        
+        function entrada_Dpoco4(){
+            var entrada_Dpoco4 = 'entrada boton Dificultad_poco_4';
+            console.log(entrada_Dpoco4)
+        }
+        
+        function salida_Dpoco4(){
+            var salida_Dpoco4 = 'salida boton Dificultad_poco_4';
+            console.log(salida_Dpoco4)
+        }
+
+  //---------------------------Eventos del boton te gusto REGULAR_1----------------------------------------------
+        document.getElementById("Dregular_4").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_4").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular4 = 'Click en boton Dificultad_regular_4';
+            console.log(Dregular4);
+        }
+        
+        function mouseUpForward(){
+            var Dregular4 = 'Suelta el  boton Dificultad_regular_4'
+            console.log(Dregular4);
+        }
+        
+        function entrada_Dregular4(){
+            var entrada_Dregular4 = 'entrada boton Dificultad_regular_4';
+            console.log(entrada_Dregular4)
+        }
+        
+        function salida_Dregular4(){
+            var salida_Dregular4 = 'salida boton Dificultad_regular_4';
+            console.log(salida_Dregular4)
+        }
+
+  //---------------------------Eventos del boton te gusto BASTANTE_1----------------------------------------------
+        document.getElementById("Dbastante_4").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_4").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante4 = 'Click en boton Dificultad_bastante_4';
+            console.log(Dbastante4);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante4 = 'Suelta el  boton Dificultad_bastante_4'
+            console.log(Dbastante4);
+        }
+        
+        function entrada_Dbastante4(){
+            var entrada_Dbastante4 = 'entrada boton Dificultad_bastante_4';
+            console.log(entrada_Dbastante4)
+        }
+        
+        function salida_Dbastante4(){
+            var salida_Dbastante4 = 'salida boton Dificultad_bastante_4';
+            console.log(salida_Dbastante4)
+        }
+
+  //---------------------------Eventos del boton te gusto MUCHO_1----------------------------------------------
+        document.getElementById("Dmucho_4").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_4").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho4 = 'Click en boton Dificultad_mucho_4';
+            console.log(Dmucho4);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho4 = 'Suelta el  boton Dificultad_mucho_4'
+            console.log(Dmucho4);
+        }
+        
+        function entrada_Dmucho4(){
+            var entrada_Dmucho4 = 'entrada boton Dificultad_mucho_4';
+            console.log(entrada_Dmucho4)
+        }
+        
+        function salida_Dmucho4(){
+            var salida_Dmucho4 = 'salida boton Dificultad_mucho_4';
+            console.log(salida_Dmucho4)
+        }
+    </script>
+    
+    </div>
+    
+    <div id="pregunta 5">
+     <h3>Te gusto el nivel 5:</h3> 
+
+     <button class="button" id="nada_5"  onmouseenter="entrada_nada5()" onmouseleave="salida_nada5()">Nada</button>
+     <button class="button_2" id="poco_5" onmouseenter="entrada_poco5()" onmouseleave="salida_poco5()">Poco</button>
+     <button class="button_3" id="regular_5" onmouseenter="entrada_regular5()" onmouseleave="salida_regular5()">Regular</button>
+     <button class="button_4" id="bastante_5" onmouseenter="entrada_bastante5()" onmouseleave="salida_bastante5()">Bastante</button>
+     <button class="button_5" id="mucho_5" onmouseenter="entrada_mucho5()" onmouseleave="salida_mucho5()">Mucho</button>
+
+     <script>
+      //---------------------------Eventos del boton te gusto NADA_5----------------------------------------------
+              document.getElementById("nada_5").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("nada_5").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var nada5 = 'Click en boton nada_5';
+                  console.log(nada5);
+              }
+              
+              function mouseUpForward(){
+                  var nada5 = 'Suelta el  boton nada_5'
+                  console.log(nada5);
+              }
+              
+              function entrada_nada5(){
+                  var entrada_nada5 = 'entrada boton nada_5';
+                  console.log(entrada_nada5)
+              }
+              
+              function salida_nada5(){
+                  var salida_nada5 = 'salida boton nada_5';
+                  console.log(salida_nada5)
+              }
+      
+      //---------------------------Eventos del boton te gusto POCO_5----------------------------------------------
+              document.getElementById("poco_5").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("poco_5").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var poco5 = 'Click en boton poco_5';
+                  console.log(poco5);
+              }
+              
+              function mouseUpForward(){
+                  var poco5 = 'Suelta el  boton poco_5'
+                  console.log(poco5);
+              }
+              
+              function entrada_poco5(){
+                  var entrada_poco5 = 'entrada boton poco_5';
+                  console.log(entrada_poco5)
+              }
+              
+              function salida_poco5(){
+                  var salida_poco5 = 'salida boton poco_5';
+                  console.log(salida_poco5)
+              }
+      
+        //---------------------------Eventos del boton te gusto REGULAR_5----------------------------------------------
+              document.getElementById("regular_5").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("regular_5").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var regular5 = 'Click en boton regular_5';
+                  console.log(regular5);
+              }
+              
+              function mouseUpForward(){
+                  var regular5 = 'Suelta el  boton regular_5'
+                  console.log(regular5);
+              }
+              
+              function entrada_regular5(){
+                  var entrada_regular5 = 'entrada boton regular_5';
+                  console.log(entrada_regular5)
+              }
+              
+              function salida_regular5(){
+                  var salida_regular5 = 'salida boton regular_5';
+                  console.log(salida_regular5)
+              }
+      
+        //---------------------------Eventos del boton te gusto BASTANTE_5----------------------------------------------
+              document.getElementById("bastante_5").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("bastante_5").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var bastante5 = 'Click en boton bastante_5';
+                  console.log(bastante5);
+              }
+              
+              function mouseUpForward(){
+                  var bastante5 = 'Suelta el  boton bastante_5'
+                  console.log(bastante5);
+              }
+              
+              function entrada_bastante5(){
+                  var entrada_bastante5 = 'entrada boton bastante_5';
+                  console.log(entrada_bastante5)
+              }
+              
+              function salida_bastante5(){
+                  var salida_bastante5 = 'salida boton bastante_5';
+                  console.log(salida_bastante5)
+              }
+      
+        //---------------------------Eventos del boton te gusto MUCHO_4----------------------------------------------
+              document.getElementById("mucho_5").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("mucho_5").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var mucho5 = 'Click en boton mucho_5';
+                  console.log(mucho5);
+              }
+              
+              function mouseUpForward(){
+                  var mucho5 = 'Suelta el  boton mucho_5'
+                  console.log(mucho5);
+              }
+              
+              function entrada_mucho5(){
+                  var entrada_mucho5 = 'entrada boton mucho_5';
+                  console.log(entrada_mucho5)
+              }
+              
+              function salida_mucho5(){
+                  var salida_mucho5 = 'salida boton mucho_5';
+                  console.log(salida_mucho5)
+              }
+      </script>
+
+    
+  <h3>Que tan dificil te parecio el nivel 5:</h3> 
+
+  <button class="button_5" onclick="window.close(), alert('Ve al nivel 7')" id="Dnada_5" 
+  onmouseenter="entrada_Dnada5()" onmouseleave="salida_Dnada5()">Nada</button>
+
+  <button class="button_4" onclick="window.close(), alert('Ve al nivel 7')" id="Dpoco_5" 
+  onmouseenter="entrada_Dpoco5()" onmouseleave="salida_Dpoco5()">Poco</button>
+
+  <button class="button_3" onclick="window.close(), alert('Ve al nivel 6')" id="Dregular_5" 
+  onmouseenter="entrada_Dregular5()" onmouseleave="salida_Dregular5()">Regular</button>
+
+  <button class="button_2" onclick="window.close(), alert('Ve al nivel 6')" id="Dbastante_5" 
+  onmouseenter="entrada_Dbastante5()" onmouseleave="salida_Dbastante5()">Bastante</button>
+
+  <button class="button" onclick="window.close(), alert('Ve al nivel 6')" id="Dmucho_5" 
+  onmouseenter="entrada_Dmucho5()" onmouseleave="salida_Dmucho5()">Mucho</button>
+    <br>
+
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_5----------------------------------------------
+      document.getElementById("Dnada_5").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_5").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada5 = 'Click en boton Dificultad_nada_5';
+            console.log(Dnada5);
+        }
+        
+        function mouseUpForward(){
+            var Dnada5 = 'Suelta el  boton Dificultad_nada_5'
+            console.log(Dnada5);
+        }
+        
+        function entrada_Dnada5(){
+            var entrada_Dnada5 = 'entrada boton Dificultad_nada_5';
+            console.log(entrada_Dnada5)
+        }
+        
+        function salida_Dnada5(){
+            var salida_Dnada5 = 'salida boton Dificultad_nada_5';
+            console.log(salida_Dnada5)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_5----------------------------------------------
+        document.getElementById("Dpoco_5").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_5").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco5 = 'Click en boton Dificultad_poco_5';
+            console.log(Dpoco5);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco5 = 'Suelta el  boton Dificultad_poco_5';
+            console.log(Dpoco5);
+        }
+        
+        function entrada_Dpoco5(){
+            var entrada_Dpoco5 = 'entrada boton Dificultad_poco_5';
+            console.log(entrada_Dpoco5)
+        }
+        
+        function salida_Dpoco5(){
+            var salida_Dpoco5 = 'salida boton Dificultad_poco_5';
+            console.log(salida_Dpoco5)
+        }
+
+  //---------------------------Eventos del boton te gusto REGULAR_1----------------------------------------------
+        document.getElementById("Dregular_5").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_5").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular5 = 'Click en boton Dificultad_regular_5';
+            console.log(Dregular5);
+        }
+        
+        function mouseUpForward(){
+            var Dregular5 = 'Suelta el  boton Dificultad_regular_5'
+            console.log(Dregular5);
+        }
+        
+        function entrada_Dregular5(){
+            var entrada_Dregular5 = 'entrada boton Dificultad_regular_5';
+            console.log(entrada_Dregular5)
+        }
+        
+        function salida_Dregular5(){
+            var salida_Dregular5 = 'salida boton Dificultad_regular_5';
+            console.log(salida_Dregular5)
+        }
+
+  //---------------------------Eventos del boton te gusto BASTANTE_1----------------------------------------------
+        document.getElementById("Dbastante_5").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_5").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante5 = 'Click en boton Dificultad_bastante_5';
+            console.log(Dbastante5);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante5 = 'Suelta el  boton Dificultad_bastante_5'
+            console.log(Dbastante5);
+        }
+        
+        function entrada_Dbastante5(){
+            var entrada_Dbastante5 = 'entrada boton Dificultad_bastante_5';
+            console.log(entrada_Dbastante5)
+        }
+        
+        function salida_Dbastante5(){
+            var salida_Dbastante5 = 'salida boton Dificultad_bastante_5';
+            console.log(salida_Dbastante5)
+        }
+
+  //---------------------------Eventos del boton te gusto MUCHO_1----------------------------------------------
+        document.getElementById("Dmucho_5").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_5").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho5 = 'Click en boton Dificultad_mucho_5';
+            console.log(Dmucho5);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho5 = 'Suelta el  boton Dificultad_mucho_5'
+            console.log(Dmucho5);
+        }
+        
+        function entrada_Dmucho5(){
+            var entrada_Dmucho5 = 'entrada boton Dificultad_mucho_5';
+            console.log(entrada_Dmucho5)
+        }
+        
+        function salida_Dmucho5(){
+            var salida_Dmucho5 = 'salida boton Dificultad_mucho_5';
+            console.log(salida_Dmucho5)
+        }
+    </script>
+
+    </div>
+    
+    <div id="pregunta 6">
+     <h3>Te gusto el nivel 6:</h3> 
+
+     <button class="button" id="nada_6"  onmouseenter="entrada_nada6()" onmouseleave="salida_nada6()">Nada</button>
+     <button class="button_2" id="poco_6" onmouseenter="entrada_poco6()" onmouseleave="salida_poco6()">Poco</button>
+     <button class="button_3" id="regular_6" onmouseenter="entrada_regular6()" onmouseleave="salida_regular6()">Regular</button>
+     <button class="button_4" id="bastante_6" onmouseenter="entrada_bastante6()" onmouseleave="salida_bastante6()">Bastante</button>
+     <button class="button_5" id="mucho_6" onmouseenter="entrada_mucho6()" onmouseleave="salida_mucho6()">Mucho</button>
+
+     <script>
+      //---------------------------Eventos del boton te gusto NADA_6----------------------------------------------
+              document.getElementById("nada_6").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("nada_6").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var nada6 = 'Click en boton nada_6';
+                  console.log(nada6);
+              }
+              
+              function mouseUpForward(){
+                  var nada6 = 'Suelta el  boton nada_6'
+                  console.log(nada6);
+              }
+              
+              function entrada_nada6(){
+                  var entrada_nada6 = 'entrada boton nada_6';
+                  console.log(entrada_nada6)
+              }
+              
+              function salida_nada6(){
+                  var salida_nada6 = 'salida boton nada_6';
+                  console.log(salida_nada6)
+              }
+      
+      //---------------------------Eventos del boton te gusto POCO_6----------------------------------------------
+              document.getElementById("poco_6").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("poco_6").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var poco6 = 'Click en boton poco_6';
+                  console.log(poco6);
+              }
+              
+              function mouseUpForward(){
+                  var poco6 = 'Suelta el  boton poco_6'
+                  console.log(poco6);
+              }
+              
+              function entrada_poco6(){
+                  var entrada_poco6 = 'entrada boton poco_6';
+                  console.log(entrada_poco6)
+              }
+              
+              function salida_poco6(){
+                  var salida_poco6 = 'salida boton poco_6';
+                  console.log(salida_poco6)
+              }
+      
+        //---------------------------Eventos del boton te gusto REGULAR_6----------------------------------------------
+              document.getElementById("regular_6").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("regular_6").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var regular6 = 'Click en boton regular_6';
+                  console.log(regular6);
+              }
+              
+              function mouseUpForward(){
+                  var regular6 = 'Suelta el  boton regular_6'
+                  console.log(regular6);
+              }
+              
+              function entrada_regular6(){
+                  var entrada_regular6 = 'entrada boton regular_6';
+                  console.log(entrada_regular6)
+              }
+              
+              function salida_regular6(){
+                  var salida_regular6 = 'salida boton regular_6';
+                  console.log(salida_regular6)
+              }
+      
+        //---------------------------Eventos del boton te gusto BASTANTE_6----------------------------------------------
+              document.getElementById("bastante_6").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("bastante_6").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var bastante6 = 'Click en boton bastante_6';
+                  console.log(bastante6);
+              }
+              
+              function mouseUpForward(){
+                  var bastante6 = 'Suelta el  boton bastante_6'
+                  console.log(bastante6);
+              }
+              
+              function entrada_bastante6(){
+                  var entrada_bastante6 = 'entrada boton bastante_6';
+                  console.log(entrada_bastante6)
+              }
+              
+              function salida_bastante6(){
+                  var salida_bastante6 = 'salida boton bastante_6';
+                  console.log(salida_bastante6)
+              }
+      
+        //---------------------------Eventos del boton te gusto MUCHO_6----------------------------------------------
+              document.getElementById("mucho_6").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("mucho_6").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var mucho6 = 'Click en boton mucho_6';
+                  console.log(mucho6);
+              }
+              
+              function mouseUpForward(){
+                  var mucho6 = 'Suelta el  boton mucho_6'
+                  console.log(mucho6);
+              }
+              
+              function entrada_mucho6(){
+                  var entrada_mucho6 = 'entrada boton mucho_6';
+                  console.log(entrada_mucho6)
+              }
+              
+              function salida_mucho6(){
+                  var salida_mucho6 = 'salida boton mucho_6';
+                  console.log(salida_mucho6)
+              }
+      </script>
+
+  <h3>Que tan dificil te parecio el nivel 6:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 8')" id="Dnada_6" 
+     onmouseenter="entrada_Dnada6()" onmouseleave="salida_Dnada6()">Nada</button>
+
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 8')" id="Dpoco_6" 
+     onmouseenter="entrada_Dpoco6()" onmouseleave="salida_Dpoco6()">Poco</button>
+
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 7')" id="Dregular_6" 
+     onmouseenter="entrada_Dregular6()" onmouseleave="salida_Dregular6()">Regular</button>
+
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 7')" id="Dbastante_6" 
+     onmouseenter="entrada_Dbastante6()" onmouseleave="salida_Dbastante6()">Bastante</button>
+
+     <button class="button" onclick="window.close(), alert('Ve al nivel 7')" id="Dmucho_6" 
+     onmouseenter="entrada_Dmucho6()" onmouseleave="salida_Dmucho6()">Mucho</button>
+    <br>
+
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_6----------------------------------------------
+      document.getElementById("Dnada_6").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_6").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada6 = 'Click en boton Dificultad_nada_6';
+            console.log(Dnada6);
+        }
+        
+        function mouseUpForward(){
+            var Dnada6 = 'Suelta el  boton Dificultad_nada_6'
+            console.log(Dnada6);
+        }
+        
+        function entrada_Dnada6(){
+            var entrada_Dnada6 = 'entrada boton Dificultad_nada_6';
+            console.log(entrada_Dnada6)
+        }
+        
+        function salida_Dnada6(){
+            var salida_Dnada6 = 'salida boton Dificultad_nada_6';
+            console.log(salida_Dnada6)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_6----------------------------------------------
+        document.getElementById("Dpoco_6").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_6").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco6 = 'Click en boton Dificultad_poco_6';
+            console.log(Dpoco6);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco6 = 'Suelta el  boton Dificultad_poco_6';
+            console.log(Dpoco6);
+        }
+        
+        function entrada_Dpoco6(){
+            var entrada_Dpoco6 = 'entrada boton Dificultad_poco_6';
+            console.log(entrada_Dpoco6)
+        }
+        
+        function salida_Dpoco6(){
+            var salida_Dpoco6 = 'salida boton Dificultad_poco_6';
+            console.log(salida_Dpoco6)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD REGULAR_6----------------------------------------------
+        document.getElementById("Dregular_6").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_6").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular6 = 'Click en boton Dificultad_regular_6';
+            console.log(Dregular6);
+        }
+        
+        function mouseUpForward(){
+            var Dregular6 = 'Suelta el  boton Dificultad_regular_6'
+            console.log(Dregular6);
+        }
+        
+        function entrada_Dregular6(){
+            var entrada_Dregular6 = 'entrada boton Dificultad_regular_6';
+            console.log(entrada_Dregular6)
+        }
+        
+        function salida_Dregular6(){
+            var salida_Dregular6 = 'salida boton Dificultad_regular_6';
+            console.log(salida_Dregular6)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD BASTANTE_6----------------------------------------------
+        document.getElementById("Dbastante_6").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_6").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante6 = 'Click en boton Dificultad_bastante_6';
+            console.log(Dbastante6);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante6 = 'Suelta el  boton Dificultad_bastante_6'
+            console.log(Dbastante6);
+        }
+        
+        function entrada_Dbastante6(){
+            var entrada_Dbastante6 = 'entrada boton Dificultad_bastante_6';
+            console.log(entrada_Dbastante6)
+        }
+        
+        function salida_Dbastante6(){
+            var salida_Dbastante6 = 'salida boton Dificultad_bastante_6';
+            console.log(salida_Dbastante6)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD MUCHO_6----------------------------------------------
+        document.getElementById("Dmucho_6").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_6").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho6 = 'Click en boton Dificultad_mucho_6';
+            console.log(Dmucho6);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho6 = 'Suelta el  boton Dificultad_mucho_6'
+            console.log(Dmucho6);
+        }
+        
+        function entrada_Dmucho6(){
+            var entrada_Dmucho6 = 'entrada boton Dificultad_mucho_6';
+            console.log(entrada_Dmucho6)
+        }
+        
+        function salida_Dmucho6(){
+            var salida_Dmucho6 = 'salida boton Dificultad_mucho_6';
+            console.log(salida_Dmucho6)
+        }
+    </script>
+
+    </div>
+    
+    <div id="pregunta 7">
+     <h3>Te gusto el nivel 7:</h3> 
+
+     <button class="button" id="nada_7"  onmouseenter="entrada_nada7()" onmouseleave="salida_nada7()">Nada</button>
+     <button class="button_2" id="poco_7" onmouseenter="entrada_poco7()" onmouseleave="salida_poco7()">Poco</button>
+     <button class="button_3" id="regular_7" onmouseenter="entrada_regular7()" onmouseleave="salida_regular7()">Regular</button>
+     <button class="button_4" id="bastante_7" onmouseenter="entrada_bastante7()" onmouseleave="salida_bastante7()">Bastante</button>
+     <button class="button_5" id="mucho_7" onmouseenter="entrada_mucho7()" onmouseleave="salida_mucho7()">Mucho</button>
+
+     <script>
+      //---------------------------Eventos del boton te gusto NADA_7----------------------------------------------
+              document.getElementById("nada_7").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("nada_7").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var nada7 = 'Click en boton nada_7';
+                  console.log(nada7);
+              }
+              
+              function mouseUpForward(){
+                  var nada7 = 'Suelta el  boton nada_7'
+                  console.log(nada7);
+              }
+              
+              function entrada_nada7(){
+                  var entrada_nada7 = 'entrada boton nada_7';
+                  console.log(entrada_nada7)
+              }
+              
+              function salida_nada7(){
+                  var salida_nada7 = 'salida boton nada_7';
+                  console.log(salida_nada7)
+              }
+      
+      //---------------------------Eventos del boton te gusto POCO_7----------------------------------------------
+              document.getElementById("poco_7").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("poco_7").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var poco7 = 'Click en boton poco_7';
+                  console.log(poco7);
+              }
+              
+              function mouseUpForward(){
+                  var poco7 = 'Suelta el  boton poco_7'
+                  console.log(poco7);
+              }
+              
+              function entrada_poco7(){
+                  var entrada_poco7 = 'entrada boton poco_7';
+                  console.log(entrada_poco7)
+              }
+              
+              function salida_poco7(){
+                  var salida_poco7 = 'salida boton poco_7';
+                  console.log(salida_poco7)
+              }
+      
+        //---------------------------Eventos del boton te gusto REGULAR_7----------------------------------------------
+              document.getElementById("regular_7").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("regular_7").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var regular7 = 'Click en boton regular_7';
+                  console.log(regular7);
+              }
+              
+              function mouseUpForward(){
+                  var regular7 = 'Suelta el  boton regular_7'
+                  console.log(regular7);
+              }
+              
+              function entrada_regular7(){
+                  var entrada_regular7 = 'entrada boton regular_7';
+                  console.log(entrada_regular7)
+              }
+              
+              function salida_regular7(){
+                  var salida_regular7 = 'salida boton regular_7';
+                  console.log(salida_regular7)
+              }
+      
+        //---------------------------Eventos del boton te gusto BASTANTE_7----------------------------------------------
+              document.getElementById("bastante_7").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("bastante_7").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var bastante7 = 'Click en boton bastante_7';
+                  console.log(bastante7);
+              }
+              
+              function mouseUpForward(){
+                  var bastante7 = 'Suelta el  boton bastante_7'
+                  console.log(bastante7);
+              }
+              
+              function entrada_bastante7(){
+                  var entrada_bastante7 = 'entrada boton bastante_7';
+                  console.log(entrada_bastante7)
+              }
+              
+              function salida_bastante7(){
+                  var salida_bastante7 = 'salida boton bastante_7';
+                  console.log(salida_bastante7)
+              }
+      
+        //---------------------------Eventos del boton te gusto MUCHO_7----------------------------------------------
+              document.getElementById("mucho_7").addEventListener("mousedown", mouseDownForward);
+              document.getElementById("mucho_7").addEventListener("mouseup", mouseUpForward);
+              
+              function mouseDownForward (){
+                  var mucho7 = 'Click en boton mucho_7';
+                  console.log(mucho7);
+              }
+              
+              function mouseUpForward(){
+                  var mucho7 = 'Suelta el  boton mucho_7'
+                  console.log(mucho7);
+              }
+              
+              function entrada_mucho7(){
+                  var entrada_mucho7 = 'entrada boton mucho_7';
+                  console.log(entrada_mucho7)
+              }
+              
+              function salida_mucho7(){
+                  var salida_mucho7 = 'salida boton mucho_7';
+                  console.log(salida_mucho7)
+              }
+      </script>
+
+    
+     
+  <h3>Que tan dificil te parecio el nivel 7:</h3> 
+
+    <button class="button_5" onclick="window.close(), alert('Ve al nivel 8')"  id="Dnada_7" 
+    onmouseenter="entrada_Dnada7()" onmouseleave="salida_Dnada7()">Nada</button>
+
+    <button class="button_4" onclick="window.close(), alert('Ve al nivel 8')"  id="Dpoco_7" 
+    onmouseenter="entrada_Dpoco7()" onmouseleave="salida_Dpoco7()">Poco</button>
+
+    <button class="button_3" onclick="window.close(), alert('Ve al nivel 8')"  id="Dregular_7" 
+    onmouseenter="entrada_Dregular7()" onmouseleave="salida_Dregular7()">Regular</button>
+
+    <button class="button_2" onclick="window.close(), alert('Ve al nivel 8')"  id="Dbastante_7" 
+    onmouseenter="entrada_Dbastante7()" onmouseleave="salida_Dbastante7()">Bastante</button>
+
+    <button class="button" onclick="window.close(), alert('Ve al nivel 8')"  id="Dmucho_7" 
+    onmouseenter="entrada_Dmucho7()" onmouseleave="salida_Dmucho7()">Mucho</button>
+    <br>
+
+
+    <script>
+      //---------------------------Eventos del boton Dificultad NADA_7----------------------------------------------
+      document.getElementById("Dnada_7").addEventListener("mousedown", mouseDownForward);
+      document.getElementById("Dnada_7").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dnada7 = 'Click en boton Dificultad_nada_7';
+            console.log(Dnada7);
+        }
+        
+        function mouseUpForward(){
+            var Dnada7 = 'Suelta el  boton Dificultad_nada_7'
+            console.log(Dnada7);
+        }
+        
+        function entrada_Dnada7(){
+            var entrada_Dnada7 = 'entrada boton Dificultad_nada_7';
+            console.log(entrada_Dnada7)
+        }
+        
+        function salida_Dnada7(){
+            var salida_Dnada7 = 'salida boton Dificultad_nada_7';
+            console.log(salida_Dnada7)
+        }
+
+//---------------------------Eventos del boton DIFICULTAD POCO_7----------------------------------------------
+        document.getElementById("Dpoco_7").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dpoco_7").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dpoco7 = 'Click en boton Dificultad_poco_7';
+            console.log(Dpoco7);
+        }
+        
+        function mouseUpForward(){
+            var Dpoco7 = 'Suelta el  boton Dificultad_poco_7';
+            console.log(Dpoco7);
+        }
+        
+        function entrada_Dpoco7(){
+            var entrada_Dpoco7 = 'entrada boton Dificultad_poco_7';
+            console.log(entrada_Dpoco7)
+        }
+        
+        function salida_Dpoco7(){
+            var salida_Dpoco7 = 'salida boton Dificultad_poco_7';
+            console.log(salida_Dpoco7)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD REGULAR_7----------------------------------------------
+        document.getElementById("Dregular_7").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dregular_7").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dregular7 = 'Click en boton Dificultad_regular_7';
+            console.log(Dregular7);
+        }
+        
+        function mouseUpForward(){
+            var Dregular7 = 'Suelta el  boton Dificultad_regular_7'
+            console.log(Dregular7);
+        }
+        
+        function entrada_Dregular7(){
+            var entrada_Dregular7 = 'entrada boton Dificultad_regular_7';
+            console.log(entrada_Dregular7)
+        }
+        
+        function salida_Dregular7(){
+            var salida_Dregular7 = 'salida boton Dificultad_regular_7';
+            console.log(salida_Dregular7)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD BASTANTE_7----------------------------------------------
+        document.getElementById("Dbastante_7").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dbastante_7").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dbastante6 = 'Click en boton Dificultad_bastante_7';
+            console.log(Dbastante7);
+        }
+        
+        function mouseUpForward(){
+            var Dbastante7 = 'Suelta el  boton Dificultad_bastante_7'
+            console.log(Dbastante7);
+        }
+        
+        function entrada_Dbastante7(){
+            var entrada_Dbastante7 = 'entrada boton Dificultad_bastante_7';
+            console.log(entrada_Dbastante7)
+        }
+        
+        function salida_Dbastante7(){
+            var salida_Dbastante7 = 'salida boton Dificultad_bastante_7';
+            console.log(salida_Dbastante7)
+        }
+
+  //---------------------------Eventos del boton DIFICULTAD MUCHO_7----------------------------------------------
+        document.getElementById("Dmucho_7").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("Dmucho_7").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var Dmucho7 = 'Click en boton Dificultad_mucho_7';
+            console.log(Dmucho7);
+        }
+        
+        function mouseUpForward(){
+            var Dmucho7 = 'Suelta el  boton Dificultad_mucho_7'
+            console.log(Dmucho7);
+        }
+        
+        function entrada_Dmucho7(){
+            var entrada_Dmucho7 = 'entrada boton Dificultad_mucho_7';
+            console.log(entrada_Dmucho7)
+        }
+        
+        function salida_Dmucho7(){
+            var salida_Dmucho7 = 'salida boton Dificultad_mucho_7';
+            console.log(salida_Dmucho7)
+        }
+    </script>
+
+
+    </div>
+    
+    <div id="pregunta 8">
+     <h3>Te gusto el nivel 8:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 8:</h3> 
+
+    <button class="button_5" onclick="window.close(), alert('Ve al nivel 10')">Nada</button>
+    <button class="button_4" onclick="window.close(), alert('Ve al nivel 10')">Poco</button>
+    <button class="button_3" onclick="window.close(), alert('Ve al nivel 9')">Regular</button>
+    <button class="button_2" onclick="window.close(), alert('Ve al nivel 9')">Bastante</button>
+    <button class="button" onclick="window.close(), alert('Ve al nivel 9')">Mucho</button>
+    <br>
+    </div>
+    
+    <div id="pregunta 9">
+     <h3>Te gusto el nivel 9:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 9:</h3> 
+
+    <button class="button_5" onclick="window.close(), alert('Ve al nivel 10')">Nada</button>
+    <button class="button_4" onclick="window.close(), alert('Ve al nivel 10')">Poco</button>
+    <button class="button_3" onclick="window.close(), alert('Ve al nivel 9')">Regular</button>
+    <button class="button_2" onclick="window.close(), alert('Ve al nivel 6')">Bastante</button>
+    <button class="button" onclick="window.close(), alert('Ve al nivel 6')">Mucho</button>
+    <br>
+    </div>
+    
+    <div id="pregunta 10">
+     <h3>Te gusto el nivel 10:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 10:</h3> 
+
+    <button class="button_5" onclick="window.close(), alert('Ve al nivel 11')">Nada</button>
+    <button class="button_4" onclick="window.close(), alert('Ve al nivel 11')">Poco</button>
+    <button class="button_3" onclick="window.close(), alert('Ve al nivel 7')">Regular</button>
+    <button class="button_2" onclick="window.close(), alert('Ve al nivel 7')">Bastante</button>
+    <button class="button" onclick="window.close(), alert('Ve al nivel 7')">Mucho</button>
+    <br>
+    </div>
+    
+    <div id="pregunta 11">
+     <h3>Te gusto el nivel 11:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 11:</h3> 
+
+    <button class="button_5" onclick="window.close(), alert('Ve al nivel 14')">Nada</button>
+    <button class="button_4" onclick="window.close(), alert('Ve al nivel 14')">Poco</button>
+    <button class="button_3" onclick="window.close(), alert('Ve al nivel 12')">Regular</button>
+    <button class="button_2" onclick="window.close(), alert('Ve al nivel 12')">Bastante</button>
+    <button class="button" onclick="window.close(), alert('Ve al nivel 12')">Mucho</button>
+    <br>
+    </div>
+    
+    <div id="pregunta 12">
+     <h3>Te gusto el nivel 12:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 12:</h3> 
+
+    <button class="button_5" onclick="window.close(), alert('Ve al nivel 14')">Nada</button>
+    <button class="button_4" onclick="window.close(), alert('Ve al nivel 14')">Poco</button>
+    <button class="button_3" onclick="window.close(), alert('Ve al nivel 13')">Regular</button>
+    <button class="button_2" onclick="window.close(), alert('Ve al nivel 13')">Bastante</button>
+    <button class="button" onclick="window.close(), alert('Ve al nivel 13')">Mucho</button>
+    <br>
+    </div>
+    
+    <div id="pregunta 13">
+     <h3>Te gusto el nivel 13:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 13:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 14')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 14')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 11')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 11')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 11')">Mucho</button>
+    <br>
+    </div>
+    
+    <div id="pregunta 14">
+     <h3>Te gusto el nivel 14:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 14:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 15')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 15')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 11')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 11')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 11')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 15">
+     <h3>Te gusto el nivel 15:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 15:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 17')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 17')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 16')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 16')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 16')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 16">
+     <h3>Te gusto el nivel 16:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 16:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 18')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 18')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 17')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 17')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 17')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 17">
+     <h3>Te gusto el nivel 17:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 17:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 19')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 19')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 18')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 18')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 18')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 18">
+     <h3>Te gusto el nivel 18:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 18:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 19')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 19')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 15')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 15')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 15')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 19">
+     <h3>Te gusto el nivel 19:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 19:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('Ve al nivel 20')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('Ve al nivel 20')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 15')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 15')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 15')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 20">
+     <h3>Te gusto el nivel 20:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecio el nivel 20:</h3> 
+
+     <button class="button_5" onclick="window.close(), alert('ve a la pregunta 21')">Nada</button>
+     <button class="button_4" onclick="window.close(), alert('ve a la pregunta 21')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Ve al nivel 15')">Regular</button>
+     <button class="button_2" onclick="window.close(), alert('Ve al nivel 15')">Bastante</button>
+     <button class="button" onclick="window.close(), alert('Ve al nivel 15')">Mucho</button>
+    <br>
+      </div>
+    
+    <div id="pregunta 21">
+     <h3>Cuanto te gusto la sesión en la que acabas de participar:</h3> 
+
+     <button class="button">Nada</button>
+     <button class="button_2" >Poco</button>
+     <button class="button_3" >Regular</button>
+     <button class="button_4">Bastante</button>
+     <button class="button_5" >Mucho</button>
+    
+  <h3>Que tan dificil te parecieron los niveles de la sesion anterior :</h3> 
+
+     <button class="button" onclick="window.close(), alert('Muchas Gracias por participar, vuelve pronto :)')">Nada</button>
+     <button class="button_2" onclick="window.close(), alert('Muchas Gracias por participar, vuelve pronto :)')">Poco</button>
+     <button class="button_3" onclick="window.close(), alert('Muchas Gracias por participar, vuelve pronto :)')">Regular</button>
+     <button class="button_4" onclick="window.close(), alert('Muchas Gracias por participar, vuelve pronto :)')">Bastante</button>
+     <button class="button_5" onclick="window.close(), alert('Muchas Gracias por participar, vuelve pronto :)')">Mucho</button>
+    <br>
+      </div>
+    
+    </body>
+</html>
