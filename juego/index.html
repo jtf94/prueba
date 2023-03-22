@@ -1,0 +1,1248 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blockly-gamepad </title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Blockly-->
+    <script src="libs/blockly/blockly_compressed.js"></script>
+    <script src="libs/blockly/blocks_compressed.js"></script>
+    <script src="libs/blockly/javascript_compressed.js"></script>
+    <script src="libs/blockly/en.js"></script>
+
+    <!--blockly-gamepad-->
+    <script src="libs/gamepad/gamepad.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--title-->
+        <span class="title">
+            <div>
+                <a style="font-size: 90%;">PiciTown</a> 
+                <a style="font-size: 80%;">&</a> 
+                <a style="font-size: 90%;">PolliGame</a>: El laberinto
+            </div>
+        </span>
+        <vr></vr>
+        <!--start switch-->
+        <span class="switch_span">Inicio</span>
+        <label class="switch">
+            <input id="start_check" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <vr></vr>
+        <!--categories switch-->
+        <span class="switch_span">Categorias</span>
+        <label class="switch">
+            <input id="categories_check" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <vr></vr>
+        <!--level buttons-->
+        <span class="switch_span">Niveles</span>
+        <button class="button level" id="level_1" onmouseenter="entradaN1()" onmouseleave="salidaN1()">1</button>
+        <button class="button level" id="level_2" onmouseenter="entradaN2()" onmouseleave="salidaN2()">2</button>
+        <button class="button level" id="level_3" onmouseenter="entradaN3()" onmouseleave="salidaN3()">3</button>
+        <button class="button level" id="level_4" onmouseenter="entradaN4()" onmouseleave="salidaN4()">4</button>
+        <button class="button level" id="level_5" onmouseenter="entradaN5()" onmouseleave="salidaN5()">5</button>
+        <button class="button level" id="level_6" onmouseenter="entradaN6()" onmouseleave="salidaN6()">6</button>
+        <button class="button level" id="level_7" onmouseenter="entradaN7()" onmouseleave="salidaN7()">7</button>
+        <button class="button level" id="level_8" onmouseenter="entradaN8()" onmouseleave="salidaN8()">8</button>
+        <button class="button level" id="level_9" onmouseenter="entradaN9()" onmouseleave="salidaN9()">9</button>
+        <button class="button level" id="level_10" onmouseenter="entradaN10()" onmouseleave="salidaN10()">10</button>
+        <button class="button level" id="level_11" onmouseenter="entradaN11()" onmouseleave="salidaN10()">11</button>
+        <button class="button level" id="level_12" onmouseenter="entradaN12()" onmouseleave="salidaN12()">12</button>
+        <button class="button level" id="level_13" onmouseenter="entradaN13()" onmouseleave="salidaN13()">13</button>
+        <button class="button level" id="level_14" onmouseenter="entradaN14()" onmouseleave="salidaN14()">14</button>
+        <button class="button level" id="level_15" onmouseenter="entradaN15()" onmouseleave="salidaN15()">15</button>
+        <button class="button level" id="level_16" onmouseenter="entradaN16()" onmouseleave="salidaN16()">16</button>
+        <button class="button level" id="level_17" onmouseenter="entradaN17()" onmouseleave="salidaN17()">17</button>
+        <button class="button level" id="level_18" onmouseenter="entradaN18()" onmouseleave="salidaN18()">18</button>
+        <button class="button level" id="level_19" onmouseenter="entradaN19()" onmouseleave="salidaN19()">19</button>
+        <button class="button level" id="level_20" onmouseenter="entradaN20()" onmouseleave="salidaN20()">20</button>
+        <vr></vr>
+    </header>
+
+    <main>
+        <!--game div-->
+        <div id="game-div">
+            <!--game 1-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="1" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_1.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish1" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="205" y="170"></image>
+                <clipPath id="pegmanClipPath1">
+                    <rect id="clipRect1" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman1" xlink:href="images/pegman.png" height="80" width="1029"
+                    clip-path="url(#pegmanClipPath1)" x="65" y="180" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 2-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="2" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_2.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish2" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="205" y="170"></image>
+                <clipPath id="2pegmanClipPath">
+                    <rect id="clipRect2" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman2" xlink:href="images/pegman.png" height="50" width="1029"  
+                    clip-path="url(#2pegmanClipPath)" x="201" y="10" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 3-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="3" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_1.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish3" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="355" y="180"></image>
+                <clipPath id="pegmanClipPath3">
+                    <rect id="clipRect3" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman3" xlink:href="images/pegman.png" height="50" width="1029"
+                    clip-path="url(#pegmanClipPath3)" x="201" y="10" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+             <!--game 4-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="4" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_4.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish4" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="210" y="350"></image>
+                <clipPath id="pegmanClipPath4">
+                    <rect id="clipRect4" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman4" xlink:href="images/pegman.png" height="50" width="1029"
+                    clip-path="url(#pegmanClipPath4)" x="201" y="10" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 5-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="5" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_3.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish5" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="115" y="190"></image>
+                <clipPath id="pegmanClipPath5">
+                    <rect id="clipRect5" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman5" xlink:href="images/pegman.png" height="60" width="1000"
+                    clip-path="url(#pegmanClipPath5)" x="300" y="0" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 6-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="6" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_1.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish6" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="310" y="200"></image>
+                <clipPath id="pegmanClipPath6">
+                    <rect id="clipRect6" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman6" xlink:href="images/pegman.png" height="50" width="1029"
+                    clip-path="url(#pegmanClipPath6)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 7-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="7" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_7.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish7" height="50" width="45" x="250" y="180"></image>
+                <image id="finish7" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="155" y="190"></image>
+                <clipPath id="7pegmanClipPath">
+                    <rect id="clipRect7" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman7" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#7pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+              <!--game 8-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="8" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_8.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish8" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="260" y="190"></image>
+                <clipPath id="8pegmanClipPath">
+                    <rect id="clipRect8" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman8" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#8pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+             <!--game 9-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="9" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_9.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish9" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="310" y="290"></image>
+                <clipPath id="9pegmanClipPath">
+                    <rect id="clipRect9" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman9" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#9pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+             <!--game 10-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="10" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_10.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish10" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="310" y="290"></image>
+                <clipPath id="10pegmanClipPath">
+                    <rect id="clipRect10" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman10" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#10pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 11-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="11" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_1.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish11" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="205" y="170"></image>
+                <clipPath id="pegmanClipPath11">
+                    <rect id="clipRect11" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman11" xlink:href="images/pegman.png" height="80" width="1029"
+                    clip-path="url(#pegmanClipPath11)" x="65" y="180" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+             <!--game 12-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="12" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_2.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish12" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="205" y="170"></image>
+                <clipPath id="12pegmanClipPath">
+                    <rect id="clipRect12" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman12" xlink:href="images/pegman.png" height="50" width="1029"  
+                    clip-path="url(#12pegmanClipPath)" x="201" y="10" transform="rotate(0, 0, 0)"></image>
+            </svg>
+             <!--game 13-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="13" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_1.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish13" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="355" y="180"></image>
+                <clipPath id="pegmanClipPath13">
+                    <rect id="clipRect13" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman13" xlink:href="images/pegman.png" height="50" width="1029"
+                    clip-path="url(#pegmanClipPath13)" x="201" y="10" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 14-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="14" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_4.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish14" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="210" y="350"></image>
+                <clipPath id="pegmanClipPath14">
+                    <rect id="clipRect14" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman14" xlink:href="images/pegman.png" height="50" width="1029"
+                    clip-path="url(#pegmanClipPath14)" x="201" y="10" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 15-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="15" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_3.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish15" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="115" y="190"></image>
+                <clipPath id="pegmanClipPath15">
+                    <rect id="clipRect15" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman15" xlink:href="images/pegman.png" height="60" width="1000"
+                    clip-path="url(#pegmanClipPath15)" x="300" y="0" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+             <!--game 16-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="16" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_1.png" class="maze" x="0" y="-1" width="400" height="399"></image>
+                <image id="finish16" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="310" y="200"></image>
+                <clipPath id="pegmanClipPath16">
+                    <rect id="clipRect16" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman16" xlink:href="images/pegman.png" height="50" width="1029"
+                    clip-path="url(#pegmanClipPath16)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 17-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="17" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_7.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish17" height="50" width="45" x="250" y="180"></image>
+                <image id="finish17" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="155" y="190"></image>
+                <clipPath id="17pegmanClipPath">
+                    <rect id="clipRect17" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman17" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#17pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 18-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="18" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_8.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish18" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="260" y="190"></image>
+                <clipPath id="18pegmanClipPath">
+                    <rect id="clipRect18" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman18" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#18pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--game 19-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="19" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_9.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish19" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="310" y="290"></image>
+                <clipPath id="19pegmanClipPath">
+                    <rect id="clipRect19" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman19" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#19pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+             <!--game 20-->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none" version="1.1" id="20" width="400px"
+                height="400px" viewBox="0 0 400 400">
+                <image xlink:href="images/nivel_10.png" class="maze" x="0" y="0" width="400" height="400"></image>
+                <image id="finish20" xlink:href="images/Pici_Elfa.png" height="45" width="35" x="360" y="50"></image>
+                <clipPath id="20pegmanClipPath">
+                    <rect id="clipRect20" width="49" height="52" x="101" y="191"></rect>
+                </clipPath>
+                <image id="pegman20" xlink:href="images/pegman.png" height="52" width="1029"  
+                    clip-path="url(#20pegmanClipPath)" x="-95" y="191" transform="rotate(0, 0, 0)"></image>
+            </svg>
+            
+            <!--capacity div-->
+            <div id="capacity" style="display: none;">Tu tienes <span id="capacityNumber">10</span> blocks left.</div>
+            <!---------------------------------buttons--------------------------------------------->
+            <div class="buttons">
+                <button id="play" class="button green" style="grid-area: 1" onmouseenter="entradaplay()" onmouseleave="salidaplay()">Ejecutar</button>
+                
+                <button id="pause" class="button green" style="grid-area: 2"
+                onmouseenter="entradapausa()" onmouseleave="salidapausa()">Pausa</button>
+                <hr>
+                <button id="forward" class="button blue" style="grid-area: 2"
+                onmouseenter="entradaadelante()" onmouseleave="salidaadelante()">Adelantar</button>
+                
+                <button id="backward" class="button blue" style="grid-area: 3"
+                onmouseenter="entradaatras()" onmouseleave="salidaatras()">Retroceder</button>
+            </div>
+            <!---------------------------SalidaDivBotones------------------------------------->
+        </div>
+        <!--workspace div-->
+        <div id="blockly-editor">
+            <div id="blockly-div"></div>
+            <!--toolbox without categories-->
+            <xml id="toolbox" style="display: none">
+                <block type="move"></block>
+                <block type="turn"></block>
+                <block type="turn">
+                    <field name="DIRECTION">3</field>
+                </block>
+                <block type="repeat_until"></block>
+                <block type="if_path"></block>
+                <block type="if_else_path"></block>
+            </xml>
+            <!--toolbox whit categories-->
+            <xml id="toolbox_c" style="display: none">
+                <category name="Controls" colour="285">
+                    <block type="move"></block>
+                    <block type="turn"></block>
+                    <block type="turn">
+                        <field name="DIRECTION">3</field>
+                    </block>
+                </category>
+                <category name="Logic" colour="120">
+                    <block type="repeat_until"></block>
+                    <block type="if_path"></block>
+                    <block type="if_else_path"></block>
+                </category>
+            </xml>
+        </div>
+    </main>
+
+    <!--load global parameters-->
+    <script>
+        // get parameters in url
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        // global vars
+        let {
+            start,
+            categories,
+            id
+        } = getUrlVars()
+
+        // update parameters
+        start = start != undefined
+        categories = categories != undefined
+        id = (id == '1') ? 0 : 1
+
+
+
+        // update the checkers
+        if (start) document.getElementById('start_check').checked = true
+        if (categories) document.getElementById('categories_check').checked = true
+
+        // set the toolbox
+        const toolbox = document.getElementById(categories ? 'toolbox_c' : 'toolbox')
+    </script>
+
+    <!--scripts-->
+    <script src="js/levels.js"></script>
+    <script src="js/gui.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/index.js"></script>
+
+    <!--link event to buttons-->
+    <script>
+        // link the buttons
+        //document.getElementById('load').onclick = () => game.loadCode()
+        document.getElementById('level_1').onclick = () => game.loadLevel(levels[id = 0]) 
+        document.getElementById('level_2').onclick = () => game.loadLevel(levels[id = 1]) 
+        document.getElementById('level_3').onclick = () => game.loadLevel(levels[id = 2]) 
+        document.getElementById('level_4').onclick = () => game.loadLevel(levels[id = 3]) 
+        document.getElementById('level_5').onclick = () => game.loadLevel(levels[id = 4]) 
+        document.getElementById('level_6').onclick = () => game.loadLevel(levels[id = 5]) 
+        document.getElementById('level_7').onclick = () => game.loadLevel(levels[id = 6]) 
+        document.getElementById('level_8').onclick = () => game.loadLevel(levels[id = 7]) 
+        document.getElementById('level_9').onclick = () => game.loadLevel(levels[id = 8]) 
+        document.getElementById('level_10').onclick = () => game.loadLevel(levels[id = 9]) 
+        document.getElementById('level_11').onclick = () => game.loadLevel(levels[id = 10]) 
+        document.getElementById('level_12').onclick = () => game.loadLevel(levels[id = 11]) 
+        document.getElementById('level_13').onclick = () => game.loadLevel(levels[id = 12]) 
+        document.getElementById('level_14').onclick = () => game.loadLevel(levels[id = 13]) 
+        document.getElementById('level_15').onclick = () => game.loadLevel(levels[id = 14]) 
+        document.getElementById('level_16').onclick = () => game.loadLevel(levels[id = 15]) 
+        document.getElementById('level_17').onclick = () => game.loadLevel(levels[id = 16]) 
+        document.getElementById('level_18').onclick = () => game.loadLevel(levels[id = 17]) 
+        document.getElementById('level_19').onclick = () => game.loadLevel(levels[id = 18]) 
+        document.getElementById('level_20').onclick = () => game.loadLevel(levels[id = 19]) 
+
+
+        document.getElementById('forward').onclick = () => gamepad.forward() + gui.removeAnimation()
+        document.getElementById('backward').onclick = () => gamepad.backward() + gui.removeAnimation()
+        document.getElementById('play').onclick = () => game.loadCode() + gamepad.play() 
+        document.getElementById('pause').onclick = () => gamepad.pause()
+
+    </script>
+
+    <!--remaining block-->
+    <script>
+        // update remaining block
+        Blockly.getMainWorkspace().addChangeListener(() => {
+            let capacity = Blockly.getMainWorkspace().remainingCapacity()
+            if (capacity != Infinity) {
+                // show capacity div
+                document.getElementById('capacity').style.display = 'block'
+                document.getElementById('capacityNumber').innerHTML = capacity
+            } else {
+                // hide capacity div
+                document.getElementById('capacity').style.display = 'none'
+            }
+        })
+    </script>
+
+    <!--Eventos de botones-->
+    <script>
+        //Funcion que detecta el movimiento
+        function movimiento(event) { //Inicia funcion Movimiento
+             
+            if (event.type == Blockly.Events.BLOCK_MOVE) { //Ciclo If para detectar los movimientos de los bloques
+                
+                //Creacion de variable para guardar los datos del evento
+                var idMovimiento = event.blockId; //variable que Guarda el ID del boton en movimiento
+                var PadreAnterior = event.oldParentId; //Variable que Guarda el ID del boton al que se estaba anclado (si lo estaba)
+                var PadreNuevo =event.newParentId; //Variable que Guarda el ID del boton al que ahora esta anclado (si lo esta)
+                
+                //Creacion del arreglo para guardar los datos del Evento MOVIMIENTO
+                const move = [idMovimiento, PadreAnterior, PadreNuevo];
+                
+                //Imprime en consola los valores del arreglo por cada Movimiento
+                console.log('id block Movimiento', move[0], "Bloque Anterior ", move[1], "Bloque Nuevo ", move[2])
+                
+            }// Cierre del ciclo If
+        }// Cierre de la funcion movimiento
+        
+        //Se manda llamnar la funcion Movimiento para que sus eventos sean escuchados por el programa en el getWorkspace.
+        Blockly.getMainWorkspace().addChangeListener(movimiento);
+        
+
+        //Function que detecta los cambios que se producen en los bloques, como direccion, posicion, comentarios, etc..
+        function cambiar(event) { // Inicio funcion cambiar
+            if (event.type == Blockly.Events.BLOCK_CHANGE) { //Ciclo if para detectar los cambios de los botones
+                
+                //Creacion de las variables para guardar los datos del evento
+                var IdCambio = event.blockId; //Variable que Guarda el Id del boton del cambio
+                var Elemento = event.element;// Variabble que Guarda el elemento de cambio
+                var Nombre = event.name;//Variable que Guarda el nombre del Cambio
+                var ValorAnterior = event.oldValue;//Variable que Guarda el valor anterior del bloque
+                var ValorNuevo = event.newValue;//Variable que Guarda el valor nuevo del cambio
+                
+                //Creación del arreglo para guardar los datos del evento CAMBIO
+                const cambio = [IdCambio, Elemento, Nombre, ValorAnterior, ValorNuevo];
+        
+                //Imprime en consola los valores del arreglo por cada Movimiento
+                console.log ('Id del Boton de Cambio: ', cambio[0], 'ELemento de cambio: ', cambio[1], 'Nombre del cambio: ', cambio[2],
+                             'Valor anterior: ', cambio[3], 'Valor Nuevo: ', cambio [4])
+            
+            }//Finaliza el ciclo If
+        }//Cierre del metodo Cambiar
+
+        //Se manda llamar la funcion Cambio para que sus eventos sean escuchados por el programa en el getWorkspace.
+        Blockly.getMainWorkspace().addChangeListener(cambiar);
+        
+
+        //Funcion para eliminar bloques
+        function eliminar(event) { //Inicio funcion elimninar
+            if (event.type == Blockly.Events.BLOCK_DELETE) {//Ciclo if para detectar los botones eliminados
+                
+                //Se crean las variables para Guardar los datos eliminados
+                var IdEliminado = event.blockId; //Variable que guarda los ID eliminados
+                var XmlEliminado = event.oldXml; //Variable que guarda la informacion de los bloques Eliminados
+                
+                //Se crea el arreglo para obtener los datos de los botones eliminados
+                const eliminado = [IdEliminado, XmlEliminado];
+                
+                //Se imprime los id de los botones eliminados
+                console.log('Id del boton Eliminado: ', eliminado[0])
+                
+                //Se imprime la información de los botones eliminados
+                const eli = [eliminado[1]];
+                console.log('informacion de eliminacion', eli[0])
+                
+            }//Se cierra el ciclo if
+        }// Se cierra el metodo eliminar 
+
+        //Se manda llamar la funcion eliminar para que sus eventos sean escuchados por el programa en el getWorkspace
+        Blockly.getMainWorkspace().addChangeListener(eliminar);
+        
+
+        //Funcion detectadora de clicks
+        function clicks(event) { //Inicia funcion Clicks
+            if (event.isUiEvent == Blockly.Events.CLICK) { // Ciclo if para detectar los clicks de botones
+                
+                //Se crean las variables para Guardar los datos de los clicks y seleccion 
+                var IdClick = event.blockId//Se crea la varia para almacenar el Id de los botones
+                var Funcion = event.element//Se almacena el tipo de funcion del boton
+                
+                
+                //Se crea el arreglo para guardar los eventos
+                const click = [Funcion, IdClick];
+                
+                //Se imprime en consola los eventos generados
+                console.log ('Funcion: ', click[0], 'Id del boton: ', click[1])
+                
+            
+            }//Cierre del ciclo If
+        }//Cierre de la funcion Clicks
+
+        //Se manda llamar la funcion Click para que sus eventos sean escuchados por el programa en el getWorkspace
+        Blockly.getMainWorkspace().addChangeListener(clicks);
+
+
+        //Propiedades de creacion de bloques
+        function creador(event) { //Inicia la funcion creacion
+            if (event.type == Blockly.Events.BLOCK_CREATE) {// inicia ciclo if para detectar la creacion de los botones
+                
+                //Se crean las variables para guardar los datos de creación 
+                var IdCreado = event.blockId; //Se crea la variable para guardar los id de la creacion 
+                var Info = event.xml; //Se crea la variable para Guardar la información del bloque
+                var tipo = event.type //Se crea la variable para Guardar el tipo de accion del bloque 
+                
+                //Se crea el arreglo para guardar la información
+                const creacion = [IdCreado, Info, tipo];
+                                
+                //Se imprime la posicion primera y ultima del arreglo creacion 
+                console.log ('Boton tipo: ', creacion[2], 'Id del boton: ', creacion[0])
+                //Se imprime la posicion central del arreglo creacion 
+                console.log ('XML: ', creacion[1])
+                
+                const result = Date.now() - before
+            console.log('tiempo en mover el botón: ', result)
+                
+            }//Se cierra el ciclo if
+        }// Se cierra le metodo creador
+        
+
+        //Se manda llamar la funcion creacion para que sus eventos sean escuchados por el programa en el getWorkspace
+        Blockly.getMainWorkspace().addChangeListener(creador);
+
+        //Funcion del Evento arrastre
+        //function comentarios(event) {
+          //  if (event.isUiEvent == Blockly.Events.BLOCK_DRAG) {
+            //   console.log('bloque arrastrado')
+              //  console.log('ID bloque arrastrado' , event.blockId)
+        //    }
+        //}
+        //Blockly.getMainWorkspace().addChangeListener(comentarios);
+   
+    //Cierre del Script detector de eventos
+    </script> 
+    
+    <!--Detector de eventos de los botones de Ejecución-->
+    <script>
+//--------------------------Eventos del boton ejecutar------------------------------------------->
+        const before = Date.now();          
+
+        document.getElementById("play").addEventListener("mousedown", mouseDown);
+        document.getElementById("play").addEventListener("mouseup", mouseUp);
+        
+        
+        function mouseDown() {
+            var play = 'click en ejecutar';
+            console.log(play);
+            const result = Date.now() - before
+            console.log('tiempo boton ejecutar: ', result)
+        }
+        
+    
+        function mouseUp() {
+            var play ='Suelta boton ejecutar';
+            console.log(play);
+        }
+        
+        function entradaplay(){
+            var entrada = 'entrada boton ejecutar';
+            console.log(entrada);
+        }
+        
+        function salidaplay(){
+            var salida = 'Salida boton ejecutar';
+            console.log(salida)
+        }
+//---------------------------------------Eventos del boton Pausa---------------------------------->
+        //const before = Date.now();
+        document.getElementById("pause").addEventListener("mousedown", mouseDownPausa);
+        document.getElementById("pause").addEventListener("mouseup", mouseUpPausa);
+        
+        function mouseDownPausa (){
+            var pause = 'Click en boton pause';
+            console.log(pause);
+            const result = Date.now() - before
+            console.log('tiempo boton pausa:', result)
+        }
+        
+        function mouseUpPausa(){
+            var pause = 'Suelta el  boton pause'
+            console.log(pause);
+        }
+        
+        function entradapausa(){
+            var entradapausa = 'entrada boton pausa';
+            console.log(entradapausa)
+        }
+        
+        function salidapausa(){
+            var salidapausa = 'salida boton pausa';
+            console.log(salidapausa)
+        }
+        
+//---------------------------------------Eventos del boton Adelante---------------------------------->
+        document.getElementById("forward").addEventListener("mousedown", mouseDownForward);
+        document.getElementById("forward").addEventListener("mouseup", mouseUpForward);
+        
+        function mouseDownForward (){
+            var adelante = 'Click en boton adelante';
+            console.log(adelante);
+            const result = Date.now() - before
+            console.log('tiempo boton adelante :', result)
+        }
+        
+        function mouseUpForward(){
+            var adelante = 'Suelta el  boton adelante'
+            console.log(adelante);
+        }
+        
+        function entradaadelante(){
+            var entradaadelante = 'entrada boton adelante';
+            console.log(entradaadelante)
+        }
+        
+        function salidaadelante(){
+            var salidaadelante = 'salida boton adelante';
+            console.log(salidaadelante)
+        }
+        
+//---------------------------------------Eventos del boton Atras---------------------------------->
+        document.getElementById("backward").addEventListener("mousedown", mouseDownBackward);
+        document.getElementById("backward").addEventListener("mouseup", mouseUpBackward);
+        
+        function mouseDownBackward (){
+            var atras = 'Click en boton atras';
+            console.log(atras);
+            const result = Date.now() - before
+            console.log('tiempo boton atras: ', result)
+        }
+        
+        function mouseUpBackward(){
+            var atras = 'Suelta el  boton atras'
+            console.log(atras);
+        }
+        
+        function entradaatras(){
+            var entradaatras = 'entrada boton atras';
+            console.log(entradaatras)
+        }
+        
+        function salidaatras(){
+            var salidaatras = 'salida boton atras';
+            console.log(salidaatras)
+        }
+        
+//----------------------------------Eventos del boton Nivel 2---------------------------------------->
+        document.getElementById("level_2").addEventListener("mousedown", mouseDownN2);
+        document.getElementById("level_2").addEventListener("mouseup", mouseUpN2);
+        
+        function mouseDownN2 (){
+            var N2 = 'Click en boton nivel 2';
+            console.log(N2);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 2: ', result)
+        }
+        
+        function mouseUpN2(){
+            var N2 = 'Suelta el  boton Nivel 2'
+            console.log(N2);
+        }
+        
+        function entradaN2(){
+            var entradaN2 = 'entrada boton Nivel 2';
+            console.log(entradaN2)
+        }
+        
+        function salidaN2(){
+            var salidaN2 = 'salida boton Nivel 2 ';
+            console.log(salidaN2)
+        }
+        
+//----------------------------------Eventos del boton Nivel 1---------------------------------------->
+        document.getElementById("level_1").addEventListener("mousedown", mouseDownN1);
+        document.getElementById("level_1").addEventListener("mouseup", mouseUpN1);
+        
+        function mouseDownN1 (){
+            var N1 = 'Click en boton nivel 1';
+            console.log(N1);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 1: ', result)
+        }
+        
+        function mouseUpN1(){
+            var N1 = 'Suelta el  boton Nivel 1'
+            console.log(N1);
+        }
+        
+        function entradaN1(){
+            var entradaN1 = 'entrada boton Nivel 1';
+            console.log(entradaN1)
+        }
+        
+        function salidaN1(){
+            var salidaN1 = 'salida boton Nivel 1 ';
+            console.log(salidaN1)
+        }
+
+        
+ //----------------------------------Eventos del boton Nivel 3---------------------------------------->
+        document.getElementById("level_3").addEventListener("mousedown", mouseDownN3);
+        document.getElementById("level_3").addEventListener("mouseup", mouseUpN3);
+        
+        function mouseDownN3 (){
+            var N3 = 'Click en boton nivel 3';
+            console.log(N3);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 3: ', result)
+        }
+        
+        function mouseUpN3(){
+            var N3 = 'Suelta el  boton Nivel 3'
+            console.log(N3);
+        }
+        
+        function entradaN3(){
+            var entradaN3 = 'entrada boton Nivel 3';
+            console.log(entradaN3)
+        }
+        
+        function salidaN3(){
+            var salidaN3 = 'salida boton Nivel 3 ';
+            console.log(salidaN3)
+        }
+        
+//----------------------------------Eventos del boton Nivel 4---------------------------------------->
+        document.getElementById("level_4").addEventListener("mousedown", mouseDownN4);
+        document.getElementById("level_4").addEventListener("mouseup", mouseUpN4);
+        
+        function mouseDownN4 (){
+            var N4 = 'Click en boton nivel 4';
+            console.log(N4);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 4: ', result)
+        }
+        
+        function mouseUpN4(){
+            var N4 = 'Suelta el  boton Nivel 4'
+            console.log(N4);
+        }
+        
+        function entradaN4(){
+            var entradaN4 = 'entrada boton Nivel 4';
+            console.log(entradaN4)
+        }
+        
+        function salidaN4(){
+            var salidaN4 = 'salida boton Nivel 4 ';
+            console.log(salidaN4)
+        }
+
+//----------------------------------Eventos del boton Nivel 5---------------------------------------->
+        document.getElementById("level_5").addEventListener("mousedown", mouseDownN5);
+        document.getElementById("level_5").addEventListener("mouseup", mouseUpN5);
+        
+        function mouseDownN5 (){
+            var N5 = 'Click en boton nivel 5';
+            console.log(N5);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 5: ', result)
+        }
+        
+        function mouseUpN5(){
+            var N5 = 'Suelta el  boton Nivel 5'
+            console.log(N5);
+        }
+        
+        function entradaN5(){
+            var entradaN5 = 'entrada boton Nivel 5';
+            console.log(entradaN5)
+        }
+        
+        function salidaN5(){
+            var salidaN5 = 'salida boton Nivel 5 ';
+            console.log(salidaN5)
+        }
+        
+//----------------------------------Eventos del boton Nivel 6---------------------------------------->
+        document.getElementById("level_6").addEventListener("mousedown", mouseDownN6);
+        document.getElementById("level_6").addEventListener("mouseup", mouseUpN6);
+        
+        function mouseDownN6 (){
+            var N6 = 'Click en boton nivel 6';
+            console.log(N6);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 6: ', result)
+        }
+        
+        function mouseUpN6(){
+            var N6 = 'Suelta el  boton Nivel 6'
+            console.log(N6);
+        }
+        
+        function entradaN6(){
+            var entradaN6 = 'entrada boton Nivel 6';
+            console.log(entradaN6)
+        }
+        
+        function salidaN6(){
+            var salidaN6 = 'salida boton Nivel 6 ';
+            console.log(salidaN6)
+        }
+
+//----------------------------------Eventos del boton Nivel 7---------------------------------------->
+        document.getElementById("level_7").addEventListener("mousedown", mouseDownN7);
+        document.getElementById("level_7").addEventListener("mouseup", mouseUpN7);
+        
+        function mouseDownN7 (){
+            var N7 = 'Click en boton nivel 7';
+            console.log(N7);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 7: ', result)
+        }
+        
+        function mouseUpN7(){
+            var N7 = 'Suelta el  boton Nivel 7'
+            console.log(N7);
+        }
+        
+        function entradaN7(){
+            var entradaN7 = 'entrada boton Nivel 7';
+            console.log(entradaN7)
+        }
+        
+        function salidaN7(){
+            var salidaN7 = 'salida boton Nivel 7 ';
+            console.log(salidaN7)
+        }
+        
+//----------------------------------Eventos del boton Nivel 8---------------------------------------->
+        document.getElementById("level_8").addEventListener("mousedown", mouseDownN8);
+        document.getElementById("level_8").addEventListener("mouseup", mouseUpN8);
+        
+        function mouseDownN8 (){
+            var N8 = 'Click en boton nivel 8';
+            console.log(N8);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 8: ', result)
+        }
+        
+        function mouseUpN8(){
+            var N8 = 'Suelta el  boton Nivel 8'
+            console.log(N8);
+        }
+        
+        function entradaN8(){
+            var entradaN8 = 'entrada boton Nivel 8';
+            console.log(entradaN8)
+        }
+        
+        function salidaN8(){
+            var salidaN8 = 'salida boton Nivel 8 ';
+            console.log(salidaN8)
+        }
+        
+//----------------------------------Eventos del boton Nivel 9---------------------------------------->
+        document.getElementById("level_9").addEventListener("mousedown", mouseDownN9);
+        document.getElementById("level_9").addEventListener("mouseup", mouseUpN9);
+        
+        function mouseDownN9 (){
+            var N9 = 'Click en boton nivel 9';
+            console.log(N9);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 9: ', result)
+        }
+        
+        function mouseUpN9(){
+            var N9 = 'Suelta el  boton Nivel 9'
+            console.log(N9);
+        }
+        
+        function entradaN9(){
+            var entradaN9 = 'entrada boton Nivel 9';
+            console.log(entradaN9)
+        }
+        
+        function salidaN9(){
+            var salidaN9 = 'salida boton Nivel 9 ';
+            console.log(salidaN9)
+        }
+        
+//----------------------------------Eventos del boton Nivel 10---------------------------------------->
+        document.getElementById("level_10").addEventListener("mousedown", mouseDownN10);
+        document.getElementById("level_10").addEventListener("mouseup", mouseUpN10);
+        
+        function mouseDownN10 (){
+            var N10 = 'Click en boton nivel 10';
+            console.log(N10);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 10: ', result)
+        }
+        
+        function mouseUpN10(){
+            var N10 = 'Suelta el  boton Nivel 10'
+            console.log(N10);
+        }
+        
+        function entradaN10(){
+            var entradaN10 = 'entrada boton Nivel 10';
+            console.log(entradaN10)
+        }
+        
+        function salidaN10(){
+            var salidaN10 = 'salida boton Nivel 10 ';
+            console.log(salidaN10)
+        }
+        
+//----------------------------------Eventos del boton Nivel 11---------------------------------------->
+        document.getElementById("level_11").addEventListener("mousedown", mouseDownN11);
+        document.getElementById("level_11").addEventListener("mouseup", mouseUpN11);
+        
+        function mouseDownN11 (){
+            var N11 = 'Click en boton nivel 11';
+            console.log(N11);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 11: ', result)
+        }
+        
+        function mouseUpN11(){
+            var N11 = 'Suelta el  boton Nivel 11'
+            console.log(N11);
+        }
+        
+        function entradaN11(){
+            var entradaN11 = 'entrada boton Nivel 11';
+            console.log(entradaN11)
+        }
+        
+        function salidaN11(){
+            var salidaN11 = 'salida boton Nivel 11 ';
+            console.log(salidaN11)
+        }
+        
+//----------------------------------Eventos del boton Nivel 12---------------------------------------->
+        document.getElementById("level_12").addEventListener("mousedown", mouseDownN12);
+        document.getElementById("level_12").addEventListener("mouseup", mouseUpN12);
+        
+        function mouseDownN12 (){
+            var N12 = 'Click en boton nivel 12';
+            console.log(N12);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 12: ', result)
+        }
+        
+        function mouseUpN12(){
+            var N12 = 'Suelta el  boton Nivel 12'
+            console.log(N12);
+        }
+        
+        function entradaN12(){
+            var entradaN12 = 'entrada boton Nivel 12';
+            console.log(entradaN12)
+        }
+        
+        function salidaN12(){
+            var salidaN12 = 'salida boton Nivel 12 ';
+            console.log(salidaN12)
+        }
+        
+//----------------------------------Eventos del boton Nivel 13---------------------------------------->
+        document.getElementById("level_13").addEventListener("mousedown", mouseDownN13);
+        document.getElementById("level_13").addEventListener("mouseup", mouseUpN13);
+        
+        function mouseDownN13 (){
+            var N13 = 'Click en boton nivel 13';
+            console.log(N13);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 13: ', result)
+        }
+        
+        function mouseUpN13(){
+            var N13 = 'Suelta el  boton Nivel 13'
+            console.log(N13);
+        }
+        
+        function entradaN13(){
+            var entradaN13 = 'entrada boton Nivel 13';
+            console.log(entradaN13)
+        }
+        
+        function salidaN13(){
+            var salidaN13 = 'salida boton Nivel 13 ';
+            console.log(salidaN13)
+        }
+        
+//----------------------------------Eventos del boton Nivel 4---------------------------------------->
+        document.getElementById("level_14").addEventListener("mousedown", mouseDownN14);
+        document.getElementById("level_14").addEventListener("mouseup", mouseUpN14);
+        
+        function mouseDownN14 (){
+            var N14 = 'Click en boton nivel 14';
+            console.log(N14);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 14: ', result)
+        }
+        
+        function mouseUpN14(){
+            var N14 = 'Suelta el  boton Nivel 14'
+            console.log(N14);
+        }
+        
+        function entradaN14(){
+            var entradaN14 = 'entrada boton Nivel 14';
+            console.log(entradaN14)
+        }
+        
+        function salidaN14(){
+            var salidaN14 = 'salida boton Nivel 14 ';
+            console.log(salidaN14)
+        }
+        
+//----------------------------------Eventos del boton Nivel 15---------------------------------------->
+        document.getElementById("level_15").addEventListener("mousedown", mouseDownN15);
+        document.getElementById("level_15").addEventListener("mouseup", mouseUpN15);
+        
+        function mouseDownN15 (){
+            var N15 = 'Click en boton nivel 15';
+            console.log(N15);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 15: ', result)
+        }
+        
+        function mouseUpN15(){
+            var N15 = 'Suelta el  boton Nivel 15'
+            console.log(N15);
+        }
+        
+        function entradaN15(){
+            var entradaN15 = 'entrada boton Nivel 15';
+            console.log(entradaN15)
+        }
+        
+        function salidaN15(){
+            var salidaN15 = 'salida boton Nivel 15 ';
+            console.log(salidaN15)
+        }
+        
+        //----------------------------------Eventos del boton Nivel 16---------------------------------------->
+        document.getElementById("level_16").addEventListener("mousedown", mouseDownN16);
+        document.getElementById("level_16").addEventListener("mouseup", mouseUpN16);
+        
+        function mouseDownN16 (){
+            var N16 = 'Click en boton nivel 16';
+            console.log(N16);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 16: ', result)
+        }
+        
+        function mouseUpN16(){
+            var N16 = 'Suelta el  boton Nivel 16'
+            console.log(N16);
+        }
+        
+        function entradaN16(){
+            var entradaN16 = 'entrada boton Nivel 16';
+            console.log(entradaN16)
+        }
+        
+        function salidaN16(){
+            var salidaN16 = 'salida boton Nivel 16 ';
+            console.log(salidaN16)
+        }
+        
+//----------------------------------Eventos del boton Nivel 17---------------------------------------->
+        document.getElementById("level_17").addEventListener("mousedown", mouseDownN17);
+        document.getElementById("level_17").addEventListener("mouseup", mouseUpN17);
+        
+        function mouseDownN17 (){
+            var N17 = 'Click en boton nivel 17';
+            console.log(N17);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 17: ', result)
+        }
+        
+        function mouseUpN17(){
+            var N17 = 'Suelta el  boton Nivel 17'
+            console.log(N17);
+        }
+        
+        function entradaN17(){
+            var entradaN17 = 'entrada boton Nivel 17';
+            console.log(entradaN17)
+        }
+        
+        function salidaN17(){
+            var salidaN17 = 'salida boton Nivel 17 ';
+            console.log(salidaN17)
+        }
+        
+//----------------------------------Eventos del boton Nivel 18---------------------------------------->
+        document.getElementById("level_18").addEventListener("mousedown", mouseDownN18);
+        document.getElementById("level_18").addEventListener("mouseup", mouseUpN18);
+        
+        function mouseDownN18 (){
+            var N18 = 'Click en boton nivel 18';
+            console.log(N18);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 18: ', result)
+        }
+        
+        function mouseUpN18(){
+            var N18 = 'Suelta el  boton Nivel 18'
+            console.log(N18);
+        }
+        
+        function entradaN18(){
+            var entradaN18 = 'entrada boton Nivel 18';
+            console.log(entradaN18)
+        }
+        
+        function salidaN18(){
+            var salidaN18 = 'salida boton Nivel 18 ';
+            console.log(salidaN18)
+        }
+        
+        //----------------------------------Eventos del boton Nivel 19---------------------------------------->
+        document.getElementById("level_19").addEventListener("mousedown", mouseDownN19);
+        document.getElementById("level_19").addEventListener("mouseup", mouseUpN19);
+        
+        function mouseDownN19 (){
+            var N19 = 'Click en boton nivel 19';
+            console.log(N19);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 19: ', result)
+        }
+        
+        function mouseUpN19(){
+            var N19 = 'Suelta el  boton Nivel 19'
+            console.log(N19);
+        }
+        
+        function entradaN19(){
+            var entradaN19 = 'entrada boton Nivel 19';
+            console.log(entradaN19)
+        }
+        
+        function salidaN19(){
+            var salidaN19 = 'salida boton Nivel 19 ';
+            console.log(salidaN19)
+        }
+        
+//----------------------------------Eventos del boton Nivel 10---------------------------------------->
+        document.getElementById("level_20").addEventListener("mousedown", mouseDownN20);
+        document.getElementById("level_20").addEventListener("mouseup", mouseUpN20);
+        
+        function mouseDownN20 (){
+            var N20 = 'Click en boton nivel 20';
+            console.log(N20);
+            const result = Date.now() - before
+            console.log('tiempo boton nivel 20: ', result)
+        }
+        
+        function mouseUpN20(){
+            var N20 = 'Suelta el  boton Nivel 20'
+            console.log(N20);
+        }
+        
+        function entradaN20(){
+            var entradaN20 = 'entrada boton Nivel 20';
+            console.log(entradaN20)
+        }
+        
+        function salidaN20(){
+            var salidaN20 = 'salida boton Nivel 20 ';
+            console.log(salidaN20)
+        }
+        
+    </script>
+
+
+    <!--navigation-->
+    <script>
+        // get the url
+        const getUrl = (start, categories) => {
+            let url = []
+
+            if (start) url.push('start=true')
+            if (categories) url.push('categories=true')
+            url.push('id=' + (id + 1))
+
+            return 'index.html?' + url.join('&')
+        }
+        // add handlers
+        document.getElementById('start_check').onclick =
+            (event) => window.location.href = getUrl(event.target.checked, categories)
+
+        document.getElementById('categories_check').onclick =
+            (event) => window.location.href = getUrl(start, event.target.checked)
+
+        // show capacity div
+        if (id == 2) document.getElementById('capacity').style.display = 'block'
+
+    </script>
+   
+    
+</body>
+
+</html>
